@@ -94,10 +94,10 @@ footer {
     background-color: rgb(50, 80, 93);
     font-size: larger;
     font-weight: 200;
-    position: fixed;
+    /*position: fixed;
     bottom: 0px;
     left: auto;
-    width: 600px
+    width: 600px*/
 }
 
 #lastModified {
