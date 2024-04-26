@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+header {
+    background-color: rgb(77, 123, 142);
+    color: aliceblue;
+}
+
+header div {
+    display: grid;
+    grid-template-columns: 80px 1fr 4fr 80px;
+}
+
+#profile-image {
+    margin: 10px;
+    grid-column: 2/3;
+    max-width: 100px;
+    max-height: auto;
+}
+
+#profile-name {
+    padding-top: 25px;
+    grid-column: 3/4;
+}
+
+main {
+    display: grid;
+    grid-template-rows: 100px auto;
+    row-gap: 20px;
+}
+
+nav {
+    flex-direction: column;
+    display: flex;
+}
+
+nav a {
+    color: aliceblue;
+    background-color: rgb(50, 80, 93);
+    padding: 10px 0px;
+}
+
+nav a:hover {
+    color: aliceblue;
+    background-color: rgb(26, 42, 49);
+}
+
+h2 {
+    font-family: "Oswald";
+    font-weight: 400;
+    border-bottom: 2px solid rgb(50, 80, 93);
+}
+
+body {
+    max-width: 600px;
+    margin: auto;
+    text-align: center;
+    font-family: "Roboto";
+}
+
+.card {
+    margin: 10px;
+    border: 2px solid rgb(146, 159, 165);
+    overflow: hidden;
+    border-radius: 5px;
+    flex-direction: column;
+    display: flex;
+    background-color: rgb(50, 80, 93);
+    color: aliceblue
+}
+
+.card ul {
+    list-style-type: none;
+    background-color: aliceblue;
+    text-align: left;
+    color: rgb(26, 42, 49);
+    margin: 0px;
+
+}
+
+.card ul li {
+    padding: 5px 0px;
+}
+
+.card div {
+    padding: 10px 0px;
+    background-color: aliceblue;
+    color: rgb(26, 42, 49);
+}
+
+footer {
+    font-family: "Oswald";
+    color: aliceblue;
+    background-color: rgb(50, 80, 93);
+    font-size: larger;
+    font-weight: 200;
+    position: fixed;
+    bottom: 0px;
+    left: auto;
+    width: 600px
+}
+
+#lastModified {
+    color: rgb(247, 230, 154);
+    font-size: medium;
+}
