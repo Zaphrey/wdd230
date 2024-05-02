@@ -16,6 +16,7 @@ header div {
     margin: 10px;
     grid-column: 1/2;
     max-width: 100px;
+    height: auto;
 }
 
 #profile-name {
