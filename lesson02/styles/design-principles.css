@@ -1,0 +1,65 @@
+main {
+    display: grid;
+    grid-template-rows: auto auto;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+h2 {
+    font-size: 3em;
+    border: 0px;
+}
+
+section {
+    background-color: rgb(17, 34, 42);
+    color: aliceblue;
+    grid-column: 1 / 4;
+    margin: auto 0px;
+    border: 2px solid rgb(33, 47, 53);
+}
+
+section p {
+    font-size: 2em;
+    font-family: Oswald;
+}
+
+.card {
+    border-radius: 15px 15px 0px 0px;
+    text-align: center;
+}
+
+.card img {
+    width: 95%;
+    height: auto;
+    margin: 2em auto;
+    box-shadow: 5px 5px 5px rgb(70, 108, 124);
+}
+
+.card p {
+    font-style: Oswald;
+    font-weight: 300;
+    font-size: x-large;
+    max-width: 95%;
+    margin: auto;
+    text-align: left;
+}
+
+.card-information {
+    grid-row: 2/3;
+    text-align: left;
+}
+
+.card-information p,
+a {
+    margin: 20px 0px;
+    font-weight: normal;
+    padding-left: 2.5%;
+    height: 2em;
+}
+
+.card-information p {
+    font-size: large;
+}
+
+h3 {
+    height: 1em;
+}
