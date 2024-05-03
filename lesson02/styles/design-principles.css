@@ -38,7 +38,7 @@ section p {
 }
 
 .card p {
-    font-style: "Oswald";
+    font-family: "Oswald";
     font-weight: 300;
     font-size: x-large;
     max-width: 95%;
