@@ -12,6 +12,10 @@ h2 {
     border: 0px;
 }
 
+.h3 {
+    font-family: "Roboto";
+}
+
 section {
     background-color: rgb(17, 34, 42);
     color: aliceblue;
