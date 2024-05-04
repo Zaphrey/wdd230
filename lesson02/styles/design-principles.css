@@ -4,7 +4,7 @@
 main {
     display: grid;
     grid-template-rows: auto auto;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 2fr 2fr 2fr 1fr;
 }
 
 h2 {
@@ -18,7 +18,7 @@ h3 {
 section {
     background-color: rgb(17, 34, 42);
     color: aliceblue;
-    grid-column: 1 / 4;
+    grid-column: 1 / 6;
     margin: auto 0px;
     border: 2px solid rgb(33, 47, 53);
 }
@@ -43,7 +43,7 @@ section p {
 .card p {
     font-family: "Oswald";
     font-weight: 300;
-    font-size: 1.5em;
+    font-size: 1em;
     max-width: 95%;
     margin: auto;
     text-align: left;
@@ -59,6 +59,18 @@ a {
     font-weight: normal;
     padding-left: 2.5%;
     height: 1em;
+}
+
+#card1 {
+    grid-column: 2/3;
+}
+
+#card2 {
+    grid-column: 3/4;
+}
+
+#card3 {
+    grid-column: 4/5;
 }
 
 h3 {
