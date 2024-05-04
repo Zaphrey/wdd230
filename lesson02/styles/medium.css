@@ -4,8 +4,9 @@
         grid-template-columns: 1fr 1fr;
     }
 
-    .card p {
-        font-size: 1.6em;
+    .card p,
+    a {
+        font-size: 1em;
     }
 
     #card1 {
