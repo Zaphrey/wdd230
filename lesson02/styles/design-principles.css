@@ -8,11 +8,10 @@ main {
 }
 
 h2 {
-    font-size: 3em;
     border: 0px;
 }
 
-.h3 {
+h3 {
     font-family: "Roboto";
 }
 
@@ -25,7 +24,7 @@ section {
 }
 
 section p {
-    font-size: 2em;
+    font-size: 1.5em;
     font-family: Oswald;
 }
 
