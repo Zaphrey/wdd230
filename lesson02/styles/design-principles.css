@@ -40,14 +40,13 @@ section p {
 .card p {
     font-family: "Oswald";
     font-weight: 300;
-    font-size: x-large;
+    font-size: xx-large;
     max-width: 95%;
     margin: auto;
     text-align: left;
 }
 
 .card-information {
-    grid-row: 2/3;
     text-align: left;
 }
 
@@ -57,10 +56,6 @@ a {
     font-weight: normal;
     padding-left: 2.5%;
     height: 2em;
-}
-
-.card-information p {
-    font-size: large;
 }
 
 h3 {

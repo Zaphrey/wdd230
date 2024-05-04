@@ -1,7 +1,11 @@
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1050px) {
     main {
         grid-template-rows: auto auto;
         grid-template-columns: 1fr 1fr;
+    }
+
+    .card p {
+        font-size: 1.6em;
     }
 
     #card1 {
