@@ -48,7 +48,7 @@ main {
     height: 50px;
     border: 0px;
     font-size: 2em;
-    transform: rotate(0turn);
+    transform: rotate(0.25turn);
 }
 
 #hamburger-button:hover {
@@ -56,7 +56,7 @@ main {
 }
 
 #hamburger-button.closed {
-    transform: rotate(0.25turn);
+    transform: rotate(0turn);
 }
 
 nav {
