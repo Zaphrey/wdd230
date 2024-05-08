@@ -26,7 +26,10 @@
                 alt="A picture of me hanging out with some friends a few years back">
             <h1 id="profile-name">Zachary Humphreys</h1>
         </div>
-        <nav>
+        <div id="hamburger-container">
+            <button id="hamburger-button" class="closed">☰</button>
+        </div>
+        <nav class="navigation closed">
             <a href="#">Home</a>
             <a href="lesson03/chamber-site-plan.html">Site Plan</a>
             <a href="chamber/">Chamber</a>
@@ -64,6 +67,13 @@
             <div>Weather: Unknown</div>
             <div>Visits: Unknown</div>
         </section>
+        <div id="map-frame">
+            <iframe id="map"
+                src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d16218.94515469745!2d-83.6621274546932!3d32.87071548638146!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1715130693278!5m2!1sen!2sus"
+                width="600" height="450" style="border:1px;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+        </div>
     </main>
 
     <footer>
@@ -72,6 +82,7 @@
     </footer>
 
     <script src="scripts/getdates.js"></script>
+    <script src="scripts/menu.js"></script>
 </body>
 
 </html>
