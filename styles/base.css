@@ -53,6 +53,10 @@ main {
     transform: rotate(0.25turn);
 }
 
+#hamburger-button::before {
+    content: "☰";
+}
+
 #hamburger-button:hover {
     color: rgb(177, 177, 177);
 }
