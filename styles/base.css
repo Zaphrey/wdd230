@@ -15,8 +15,10 @@ header div {
 #profile-image {
     margin: 10px;
     grid-column: 1/2;
-    max-width: 100px;
+    max-height: 100;
+    max-width: 102px;
     height: auto;
+    width: auto;
 }
 
 #profile-name {
