@@ -34,22 +34,18 @@ main {
 
 #color-containers :nth-child(1) {
     background-color: var(--main-color-1);
-    content: var(--main-color-1);
 }
 
 #color-containers :nth-child(2) {
     background-color: var(--main-color-2);
-    content: var(--main-color-2);
 }
 
 #color-containers :nth-child(3) {
     background-color: var(--text-color);
-    content: var(--text-color);
 }
 
 #color-containers :nth-child(4) {
     background-color: var(--complementary-color);
-    content: var(--complementary-color);
 }
 
 #typography {
