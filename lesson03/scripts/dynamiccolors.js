@@ -22,7 +22,7 @@ colorContainerHolder.childNodes.forEach(child => {
         let color = window.getComputedStyle(child).backgroundColor;
         let rgb = getRGBValuesFromString(color);
 
-        child.textContent = rgbToHex(rgb[0], rgb[1], rgb[2]);
+        child.textContent = `${child.textContent}: ${rgbToHex(rgb[0], rgb[1], rgb[2])}`;
         child.style.color = rgbToHex(255 - rgb[0], 255 - rgb[1], 255 - rgb[2]);
     }
 })
