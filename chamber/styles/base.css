@@ -292,6 +292,6 @@ footer p {
 }
 
 #last-modified {
-    color: var(--complementary-color);
+    color: var(--background-color);
     text-align: center;
 }
