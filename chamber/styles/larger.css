@@ -1,0 +1,70 @@
+@media screen and (min-width:1000px) {
+    /* Landing */
+
+    #landing-text {
+        max-width: 75ch;
+        margin: auto;
+        padding: 40px;
+    }
+
+    #call-to-action {
+        display: block;
+        width: 100px;
+        margin: auto;
+    }
+
+    /* Events */
+
+    #event-card-container {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .event-card {
+        flex: auto;
+        margin: 50px;
+    }
+
+    .event-card img {
+        max-height: 300px;
+    }
+
+    /* Members */
+
+    #member-card-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        height: 250px;
+    }
+
+    .member-card {
+        flex: 1;
+        margin: 10px;
+        max-height: 300px;
+        max-width: 400px;
+        height: auto;
+    }
+
+    .member-card p {
+        margin-top: 20px;
+    }
+
+    .member-card img {
+        max-height: 50%;
+    }
+
+    /* Weather */
+
+    #weather-card-container {
+        max-width: 100vw;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .weather-card {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr auto;
+        min-width: 200px;
+    }
+}
