@@ -13,6 +13,10 @@
         margin: auto;
     }
 
+    #site-name {
+        font-size: xx-large;
+    }
+
     /* Events */
 
     #event-card-container {
