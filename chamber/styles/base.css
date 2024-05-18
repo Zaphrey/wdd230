@@ -290,6 +290,7 @@ p {
 h2 {
     font-family: Oswald;
     color: var(--border-color);
+    text-align: center;
 }
 
 footer p {
