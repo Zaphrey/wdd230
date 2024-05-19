@@ -167,6 +167,12 @@ a {
     padding-bottom: 40px;
 }
 
+h2 {
+    margin: 0px;
+    padding: 40px;
+    text-align: center;
+}
+
 #event-card-container {
     display: flex;
     flex-direction: column;
@@ -200,7 +206,7 @@ a {
     background-color: var(--secondary-color);
 }
 
-#spotlight-members-section h1 {
+#spotlight-members-section h2 {
     color: var(--background-color);
 }
 
@@ -285,7 +291,7 @@ p {
     font-family: Roboto;
 }
 
-h1 {
+h2 {
     font-family: Oswald;
     color: var(--border-color);
     text-align: center;
