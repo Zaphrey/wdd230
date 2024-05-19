@@ -123,6 +123,10 @@ img {
     max-height: 1000%;
 }
 
+#hero-attribution-container {
+    text-align: left;
+}
+
 #site-name {
     font-size: large;
     color: var(--secondary-color);
