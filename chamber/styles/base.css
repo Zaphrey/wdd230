@@ -167,12 +167,6 @@ a {
     padding-bottom: 40px;
 }
 
-h2 {
-    margin: 0px;
-    padding: 40px;
-    text-align: center;
-}
-
 #event-card-container {
     display: flex;
     flex-direction: column;
@@ -206,7 +200,7 @@ h2 {
     background-color: var(--secondary-color);
 }
 
-#spotlight-members-section h2 {
+#spotlight-members-section h1 {
     color: var(--background-color);
 }
 
