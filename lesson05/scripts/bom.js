@@ -9,6 +9,7 @@ button.addEventListener("click", () => {
 
         li.textContent = input.value;
         deleteButton.textContent = "❌";
+        deleteButton.ariaLabel = `Remove ${input.value}`;
 
         li.appendChild(deleteButton);
         list.appendChild(li);
