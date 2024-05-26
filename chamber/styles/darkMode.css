@@ -1,21 +1,17 @@
 /* Dark mode selectiors */
 
 :root.dark {
-    --primary-color: #34434b;
-    --secondary-color: #283238;
+    --primary-color: #445863;
+    --secondary-color: #36434a;
     --background-color: #2c303a;
     --text-color: #ddd2be;
-    --border-color: #222a2f;
+    --border-color: #181f23;
     --complementary-color: #F2AF29;
     --complementary-color-shadow: #ab7f27;
 }
 
 body.dark {
     background-color: var(--border-color);
-}
-
-nav a.dark {
-    color: var(--background-color);
 }
 
 #site-name.dark {
@@ -34,23 +30,24 @@ nav a.dark {
     color: var(--text-color);
 }
 
-#logo-img {
-    filter: contrast(100%);
-}
-
-header p.dark {
-    color: var(--background-color);
+#logo-img.dark {
+    filter: brightness(50%);
 }
 
 nav a.dark {
+    background-color: var(--background-color);
     color: var(--text-color);
+}
+
+nav a.dark:hover {
+    background-color: var(--border-color);
 }
 
 header p.dark {
     color: var(--text-color);
 }
 
-#call-to-action a.dark {
+#call-to-action.dark {
     color: var(--border-color);
 }
 
@@ -88,12 +85,17 @@ header p.dark {
     color: var(--text-color);
 }
 
+.member-card.dark {
+    background-color: var(--background-color);
+}
+
 .member-card p.dark {
     color: var(--text-color);
 }
 
 #weather-section.dark {
     background-color: var(--border-color);
+    padding-bottom: 20px;
 }
 
 #weather-section h2.dark {
