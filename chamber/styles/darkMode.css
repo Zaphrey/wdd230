@@ -1,0 +1,115 @@
+/* Dark mode selectiors */
+
+:root.dark {
+    --primary-color: #34434b;
+    --secondary-color: #283238;
+    --background-color: #2c303a;
+    --text-color: #ddd2be;
+    --border-color: #222a2f;
+    --complementary-color: #F2AF29;
+    --complementary-color-shadow: #ab7f27;
+}
+
+body.dark {
+    background-color: var(--border-color);
+}
+
+nav a.dark {
+    color: var(--background-color);
+}
+
+#site-name.dark {
+    color: var(--text-color);
+}
+
+#menu-button.dark {
+    color: var(--text-color);
+}
+
+#menu-button.dark:hover {
+    color: var(--secondary-color);
+}
+
+#call-to-action.dark {
+    color: var(--text-color);
+}
+
+#logo-img {
+    filter: contrast(100%);
+}
+
+header p.dark {
+    color: var(--background-color);
+}
+
+nav a.dark {
+    color: var(--text-color);
+}
+
+header p.dark {
+    color: var(--text-color);
+}
+
+#call-to-action a.dark {
+    color: var(--border-color);
+}
+
+#hero-attribution-container.dark {
+    text-align: left;
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+#hero-attribution-container a.dark {
+    color: var(--complementary-color);
+}
+
+#hero-attribution-container a.dark:visited {
+    color: var(--complementary-color-shadow);
+}
+
+#events-section h2.dark {
+    color: var(--text-color);
+}
+
+.event-card.dark {
+    box-shadow: 5px 5px 5px var(--border-color);
+}
+
+.event-card p.dark {
+    color: var(--text-color);
+}
+
+#spotlight-members-section {
+    background-color: var(--primary-color);
+}
+
+#spotlight-members-section h2.dark {
+    color: var(--text-color);
+}
+
+.member-card p.dark {
+    color: var(--text-color);
+}
+
+#weather-section.dark {
+    background-color: var(--border-color);
+}
+
+#weather-section h2.dark {
+    color: var(--text-color);
+}
+
+footer.dark {
+    background-color: #2c303a;
+    margin: 0px;
+    padding: 40px 20px 20px;
+}
+
+footer p.dark {
+    color: var(--text-color);
+}
+
+#last-modified {
+    color: var(--complementary-color);
+}

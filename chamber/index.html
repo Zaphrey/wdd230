@@ -18,14 +18,19 @@
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/medium.css">
     <link rel="stylesheet" href="styles/larger.css">
+    <link rel="stylesheet" href="styles/darkMode.css">
 </head>
 
 <body>
     <header>
         <a href="index.html" id="site-icon">
-            <img src="images/placeholder.jpeg" alt="PLACEHOLDER">
+            <img id="logo-img" src="images/temp_logo.png" alt="Temporary site logo">
         </a>
         <p>Macon-Bibb <br> Chamber of Commerce</p>
+        <div>
+            <p> </p>
+            <button id="dark-mode-button">💡/⚫️</button>
+        </div>
         <button id="menu-button" class="open"></button>
     </header>
     <nav class="open">
@@ -179,6 +184,7 @@
     </footer>
     <script src="scripts/getDates.js"></script>
     <script src="scripts/hamburgerMenu.js"></script>
+    <script src="scripts/darkMode.js"></script>
 </body>
 
 </html>
