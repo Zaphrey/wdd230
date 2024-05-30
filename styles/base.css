@@ -28,6 +28,27 @@ header div {
     margin: auto;
 }
 
+#hero {
+    position: relative;
+}
+
+#hero img {
+    object-fit: cover;
+    width: 100vw;
+    height: 50vh;
+}
+
+#hero-text {
+    width: 200px;
+    height: auto;
+    padding: 20px;
+    position: absolute;
+    background: radial-gradient(#ffffff, #c9dbd9);
+    border: solid rgb(130, 134, 145);
+    top: 40px;
+    left: 40px;
+}
+
 main {
     display: grid;
     grid-template-rows: 1fr;
