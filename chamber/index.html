@@ -24,7 +24,7 @@
 <body>
     <header>
         <a href="index.html" id="site-icon">
-            <img id="logo-img" src="images/temp_logo.png" alt="Temporary site logo">
+            <img id="logo-img" src="images/temp_logo.webp" alt="Temporary site logo">
         </a>
         <p>Macon-Bibb <br> Chamber of Commerce</p>
         <div>
@@ -41,8 +41,15 @@
     </nav>
     <main>
         <div id="landing-info">
-            <img id="hero-image" src="images/maconSkyline.webp" alt="PLACEHOLDER">
+            <!--<img id="hero-image" src="images/maconSkyline.webp" alt="PLACEHOLDER">-->
+            <picture id="hero-picture">
+                <source media="(max-width: 750px)" srcset="images/small.webp">
+                <source media="(max-width: 1000px)" srcset="images/medium.webp">
+                <img id="hero-image" src="images/large.webp" alt="The sample hero image for this weeks assignment"
+                    class="hero-image" width="1500" height="1000">
+            </picture>
             <!--Likely going to replace this and take my own picture next time I'm in the downtown area-->
+            <!--
             <div id="hero-attribution-container">
                 <a class="hero-attribution"
                     href="https://commons.wikimedia.org/wiki/File:Macon_night_skyline2.JPG">Alexdi
@@ -50,6 +57,7 @@
                 <a class="hero-attribution" href="https://creativecommons.org/licenses/by-sa/3.0">CC BY-SA 3.0</a>, via
                 Wikimedia Commons
             </div>
+            -->
             <div id="landing-text">
                 <h1 id="site-name">Macon-Bibb Chamber of Commerce</h1>
                 <p>The Macon-Bibb Chamber of Commerce aims to improve education by providing a means for businesses and
@@ -102,70 +110,77 @@
             <!--Will update cards to hold more accurate information once I have access to the proper data.-->
             <div id="weather-card-container">
                 <div class="weather-card">
-                    <img src="images/placeholder.jpeg" alt="PLACEHOLDER">
+                    <img src="images/weather-icon.webp" alt="PLACEHOLDER">
                     <div class="weather-information">
-                        <p>Humidity: 90%</p>
-                        <p>Temp: 82°F</p>
+                        <p class="temp">Temp: 82°F</p>
+                        <p class="wind-speed">Wind speed:</p>
+                        <p class="wind-chill">Wind chill:</p>
                     </div>
                     <p class="weather-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ducimus, nulla.
                     </p>
                     <p class="card-num"></p>
                 </div>
                 <div class="weather-card">
-                    <img src="images/placeholder.jpeg" alt="PLACEHOLDER">
+                    <img src="images/weather-icon.webp" alt="PLACEHOLDER">
                     <div class="weather-information">
-                        <p>Humidity: 90%</p>
-                        <p>Temp: 82°F</p>
+                        <p class="temp">Temp: 82°F</p>
+                        <p class="wind-speed">Wind speed:</p>
+                        <p class="wind-chill">Wind chill:</p>
                     </div>
                     <p class="weather-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ducimus, nulla.
                     </p>
                     <p class="card-num"></p>
                 </div>
                 <div class="weather-card">
-                    <img src="images/placeholder.jpeg" alt="PLACEHOLDER">
+                    <img src="images/weather-icon.webp" alt="PLACEHOLDER">
                     <div class="weather-information">
-                        <p>Humidity: 90%</p>
-                        <p>Temp: 82°F</p>
+                        <p class="temp">Temp: 82°F</p>
+                        <p class="wind-speed">Wind speed:</p>
+                        <p class="wind-chill">Wind chill:</p>
                     </div>
                     <p class="weather-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ducimus, nulla.
                     </p>
                     <p class="card-num"></p>
                 </div>
                 <div class="weather-card">
-                    <img src="images/placeholder.jpeg" alt="PLACEHOLDER">
+                    <img src="images/weather-icon.webp" alt="PLACEHOLDER">
                     <div class="weather-information">
-                        <p>Humidity: 90%</p>
-                        <p>Temp: 82°F</p>
+                        <p class="temp">Temp: 82°F</p>
+                        <p class="wind-speed">Wind speed:</p>
+                        <p class="wind-chill">Wind chill:</p>
                     </div>
                     <p class="weather-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ducimus, nulla.
                     </p>
                     <p class="card-num"></p>
                 </div>
                 <div class="weather-card">
-                    <img src="images/placeholder.jpeg" alt="PLACEHOLDER">
+                    <img src="images/weather-icon.webp" alt="PLACEHOLDER">
                     <div class="weather-information">
-                        <p>Humidity: 90%</p>
-                        <p>Temp: 82°F</p>
+                        <p class="temp">Temp: 82°F</p>
+                        <p class="wind-speed">Wind speed:</p>
+                        <p class="wind-chill">Wind chill:</p>
                     </div>
                     <p class="weather-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ducimus, nulla.
                     </p>
                     <p class="card-num"></p>
                 </div>
                 <div class="weather-card">
-                    <img src="images/placeholder.jpeg" alt="PLACEHOLDER">
+                    <img src="images/weather-icon.webp" alt="PLACEHOLDER">
                     <div class="weather-information">
-                        <p>Humidity: 90%</p>
-                        <p>Temp: 82°F</p>
+                        <p class="temp">Temp: 82°F</p>
+                        <p class="wind-speed">Wind speed:</p>
+                        <p class="wind-chill">Wind chill:</p>
                     </div>
                     <p class="weather-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ducimus, nulla.
                     </p>
                     <p class="card-num"></p>
                 </div>
                 <div class="weather-card">
-                    <img src="images/placeholder.jpeg" alt="PLACEHOLDER">
+                    <img src="images/weather-icon.webp" alt="PLACEHOLDER">
                     <div class="weather-information">
-                        <p>Humidity: 90%</p>
-                        <p>Temp: 82°F</p>
+                        <p class="temp">Temp: 82°F</p>
+                        <p class="wind-speed">Wind speed:</p>
+                        <p class="wind-chill">Wind chill:</p>
                     </div>
                     <p class="weather-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ducimus, nulla.
                     </p>
@@ -185,6 +200,7 @@
     <script src="scripts/getDates.js"></script>
     <script src="scripts/hamburgerMenu.js"></script>
     <script src="scripts/darkMode.js"></script>
+    <script src="scripts/windchill.js"></script>
 </body>
 
 </html>
