@@ -112,6 +112,6 @@ footer p.dark {
     color: var(--text-color);
 }
 
-#last-modified {
-    color: var(--complementary-color);
+#last-modified.dark {
+    color: var(--text-color);
 }
