@@ -35,12 +35,21 @@
     }
 
     main {
-        grid-template-columns: 2fr 1fr;
+        display: grid;
+        grid-template-columns: 70vw 30vw;
     }
 
     .card {
-        grid-column: auto;
+        width: 68vw;
+        grid-column: 1/2;
+        grid-row: 3/4;
         margin-bottom: 5px;
+    }
+
+    #unique {
+        width: 28vw;
+        grid-column: 2/3;
+        grid-row: 3/4;
     }
 
     #map-frame {

@@ -64,17 +64,19 @@
                 <li> 05: <a href="lesson05/bom.html">Book of Mormon</a></li>
                 <li> 06: <a href="lesson06/images/landscape.webp">WebP</a> | <a
                         href="lesson06/responsive-images.html">Responsive Images</a></li>
-                <li> 07: <a href="#">Incomplete</a></li>
+                <li> 07: <a href="lesson07/lazyload.html">Lazy Loading Practice</a> | <a href="lesson07/bom.html">BOM
+                        Local
+                        Storage</a></li>
                 <li> 08: <a href="#">Incomplete</a></li>
                 <li> 09: <a href="#">Incomplete</a></li>
                 <li> 10: <a href="#">Incomplete</a></li>
             </ul>
         </section>
-        <section class="card">
+        <section class="card" id="unique">
             <h3>Information</h3>
             <div>Georgia, US</div>
             <div>Weather: Unknown</div>
-            <div>Visits: Unknown</div>
+            <div>Visits: <span id="visits"></span></div>
         </section>
         <div id="map-frame">
             <iframe id="map"
@@ -92,6 +94,7 @@
 
     <script src="scripts/getdates.js"></script>
     <script src="scripts/menu.js"></script>
+    <script src="scripts/information.js"></script>
 </body>
 
 </html>
