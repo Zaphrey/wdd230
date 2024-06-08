@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta property="og:title" content="Macon Chamber of Commerce">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://zaphrey.github.io/wdd230/index.html">
+    <meta property="og:image" content="https://commons.wikimedia.org/wiki/File:Macon_night_skyline.JPG">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="WDD 230 - Frontend Web Development - Chamber home page - Zachary Humphreys">
+    <meta name="author" content="Zachary William Humphreys">
+    <title>Macon-Bibb Chamber of Commerce</title>
+
+    <link rel="icon" href="favicon.ico">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="stylesheet" href="styles/darkMode.css">
+</head>
+
+<body>
+    <header>
+        <a href="index.html" id="site-icon">
+            <img id="logo-img" src="images/temp_logo.webp" alt="Temporary site logo">
+        </a>
+        <p>Macon-Bibb <br> Chamber of Commerce</p>
+        <div>
+            <p> </p>
+            <button aria-label="Dark mode button" id="dark-mode-button">💡/⚫️</button>
+        </div>
+        <button aria-label="Menu button" id="menu-button" class="open"></button>
+    </header>
+    <nav class="open">
+        <a href="index.html">Home</a>
+        <a href="#">Discover</a>
+        <a href="#">Directory</a>
+        <a id="join-button" href="#">Join</a>
+    </nav>
+    <main>
+        <h2 id="discover-header">Discover</h2>
+        <div id="discover">
+            <div id="discover-side-1" class="discover-side">
+                <h3 id="welcome-message">Welcome!</h3>
+                <div>
+                    <p id="discover-description">The Macon-Bibb Chamber of Commerce aims to improve education by
+                        providing a
+                        means for businesses and
+                        educational
+                        services to entertain the community and teach one another.</p>
+                </div>
+            </div>
+            <div id="discover-side-2" class="discover-side">
+                <h3>Upcoming Event</h3>
+                <div>
+                    <div id="event-header">
+                        <div class="attribution">Lucas Pezeta on <a
+                                href="https://www.pexels.com/photo/black-telescope-under-blue-and-blacksky-2034892/">pexels.com</a>
+                        </div>
+                        <!-- Source: https://www.mgas.org/ -->
+                        <img src="images/lucaspezeta-astronomy.webp"
+                            alt="Photo by Lucas Pezeta: https://www.pexels.com/photo/black-telescope-under-blue-and-blacksky-2034892/"
+                            width="750" height="500">
+                    </div>
+                    <h4>Middle Georgia Astronomical Society</h4>
+                    <p>The Middle Georgia Astronomical Society is an astronomy club located in central Georgia, inviting
+                        new to experienced astronomers alike to join a meeting on the first Saturday of each month. <a
+                            href="https://www.mgas.org/">Learn more</a></p>
+                </div>
+            </div>
+            <div id="discover-side-3" class="discover-side">
+                <h3>Did you know?</h3>
+                <div>
+                    <p>The Museum of Art and Sciences here in Macon hosts events that aren't just for education. The
+                        museum hosts events like father daughter dances, planetarium film festivals, and more!</p>
+                </div>
+            </div>
+            <div id="discover-img-container">
+                <div class="discover-card">
+                    <div class="caption">Divis Educational Services</div>
+                    <img loading="lazy" src="images/DESsign.webp" alt="Divis Educational Services sign" width="800"
+                        height="500">
+                </div>
+                <div class="discover-card">
+                    <div class="caption">Middle Georgia Astronomy Society</div>
+                    <div class="attribution">wolf-rayet star picture by john richards at <a
+                            href="https://www.mgas.org/">mgas</a></div>
+                    <img loading="lazy" src="images/wolf-rayet-mgas-john-richards.webp"
+                        alt="A picture of a Wolf-Rayet star by John Richards of the MGAS at https://www.mgas.org/"
+                        width="800" height="500">
+                </div>
+                <div class="discover-card">
+                    <div class="caption">Georgia Agriculture Experience</div>
+                    <img loading="lazy" src="images/ga-ag-room.webp"
+                        alt="a picture of the georgia agriculture experience mobile ag classroom" width="800"
+                        height="500">
+                </div>
+                <div class="discover-card">
+                    <div class="caption">Macon Museum of Arts and Sciences</div>
+                    <img loading="lazy" src="images/discdig-masm.webp"
+                        alt="a picture from inside the museum of arts and sciences macon" width="800" height="500">
+                </div>
+                <div class="discover-card">
+                    <div class="caption">Washington Memorial Library</div>
+                    <img loading="lazy" src="images/washington-memorial-library-mgaeli.webp" alt="placeholder img"
+                        width="800" height="500">
+                </div>
+                <div class="discover-card">
+                    <div class="caption">Ocmulgee Mounds National Historical Park</div>
+                    <img loading="lazy" src="images/ocmulgee-mounds-national-historical-part.webp"
+                        alt="a view of the great temple and lesser temple mounds in the ocmulgee mounds national historical park"
+                        width="800" height="500">
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div>
+            <p id="footer-name">&copy; Zachary William Humphreys</p>
+            <p>zachary.humphreys32@gmail.com</p>
+            <p>Project for WDD 230 @ BYU-Idaho</p>
+            <p id="last-modified"></p>
+        </div>
+    </footer>
+    <script src="scripts/getDates.js"></script>
+    <script src="scripts/hamburgerMenu.js"></script>
+    <script src="scripts/darkMode.js"></script>
+    <script src="scripts/windchill.js"></script>
+    <script src="scripts/visits.js"></script>
+</body>
+
+</html>

@@ -10,6 +10,10 @@
     --complementary-color-shadow: #ab7f27;
 }
 
+main.dark {
+    background-color: var(--border-color);
+}
+
 body.dark {
     background-color: var(--border-color);
 }
@@ -114,4 +118,37 @@ footer p.dark {
 
 #last-modified.dark {
     color: var(--text-color);
+}
+
+#dicover-side-1.dark p,
+#discover-side-2.dark p,
+#discover-side-3.dark p {
+    padding: 0px;
+    margin: 0px;
+    color: var(--text-color);
+    text-align: left;
+}
+
+#discover-side-1.dark>div,
+#discover-side-2.dark>div,
+#discover-side-3.dark>div {
+    border: 2px solid var(--border-color);
+    background-color: var(--background-color);
+    margin: 5%;
+    padding: 5%;
+}
+
+h2.dark,
+h3.dark,
+h4.dark {
+    color: var(--text-color);
+}
+
+.caption.dark,
+.attribution.dark {
+    color: var(--text-color);
+}
+
+a.dark {
+    color: var(--complementary-color);
 }
