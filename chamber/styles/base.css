@@ -453,6 +453,8 @@ body {
     color: var(--background-color);
 }
 
-.discover-header {
-    color: var(--background-color);
+#discover-header {
+    margin: 20px;
+    color: var(--border-color);
+    text-align: center;
 }

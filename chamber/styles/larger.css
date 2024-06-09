@@ -79,7 +79,7 @@
         width: 75vw;
         display: grid;
         grid-template-columns: 1fr 2fr;
-        grid-template-rows: repeat(auto, 3);
+        grid-auto-rows: auto;
         gap: 10px;
     }
 
