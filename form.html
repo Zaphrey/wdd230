@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta property="og:title" content="WDD 230 - Web Frontend Development - Zachary Humphreys">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://prnt.sc/UVGo5DMzUX_F">
+    <meta property="og:url" content="https://zaphrey.github.io/wdd230/">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="WDD 230 - Web Frontend Development - Zachary Humphreys - course assignment portal">
+    <meta name="author" content="Zachary Humphreys">
+    <title>Zachary Humphreys - WDD 230 - Web Frontend Development</title>
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="stylesheet" href="styles/form.css">
+    <link rel="icon" href="favicon.ico">
+</head>
+
+<body>
+    <header>
+        <div>
+            <img id="profile-image" src="images/me_with_friends.jpg"
+                alt="A picture of me hanging out with some friends a few years back">
+            <h1 id="profile-name">Zachary Humphreys</h1>
+        </div>
+        <div id="hamburger-container">
+            <button id="hamburger-button" class="closed"></button>
+        </div>
+        <nav class="navigation closed">
+            <a href="index.html">Home</a>
+            <a href="#">Form</a>
+            <a href="lesson03/chamber-site-plan.html">Site Plan</a>
+            <a href="chamber/">Chamber</a>
+            <a href="https://www.byui.edu/" target="_blank">BYU-Idaho</a>
+            <a href="https://www.churchofjesuschrist.org/study/scriptures/dc-testament/dc/25?lang=eng&id=p12#p12"
+                target="_blank">Scripture</a>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Form Activity</h1>
+        <form action="record.html" method="get" class="wf1">
+            <legend>Basic Form</legend>
+            <fieldset>
+                <div>* Indicates a required field</div>
+                <label>Username* <input type="text" name="username" id="username" required></label>
+                <label>Password* <input type="password" name="password" id="password1" pattern="[a-zA-Z0-9]{8,}"
+                        required placeholder="Minimum of 8 alphanumeric characters."
+                        title="Minimum 8 characters. No special characters"></label>
+                <label>Re-enter Your Password* <input type="password" name="password" id="password2"
+                        pattern="[a-zA-Z0-9]{8,}" required>
+                    <div id="invalid-password"></div>
+                </label>
+                <label>Email* <input type="email" name="email" id="email" required
+                        title="A valid byui.edu email address." placeholder="A valid byui.edu email address."
+                        pattern="[a-zA-Z0-9_.\-]+@byui.edu"></label>
+                <label>Page Rating <input type="range" name="rating" id="rating" min="0" max="5" value="0"
+                        step="1"></label>
+                <div id="rating-display">0</div>
+            </fieldset>
+
+            <input type="submit" value="Send My Form" id="form-submit">
+        </form>
+    </main>
+
+    <footer>
+        <p id="footerInformation">sup</p>
+        <p id="lastModified">Last modification: 01/01/1970 12:00:00</p>
+    </footer>
+
+    <script src="scripts/getdates.js"></script>
+    <script src="scripts/menu.js"></script>
+    <script src="scripts/form.js"></script>
+</body>
+
+</html>

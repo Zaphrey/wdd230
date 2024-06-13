@@ -1,0 +1,75 @@
+:root {
+    --legend-color: rgb(50, 80, 93);
+    --background-color: rgb(70, 108, 124);
+    --border-color: #bbb;
+    --invalid-color: rgb(122, 62, 62);
+    --valid-color: rgb(81, 139, 81);
+}
+
+main {
+    display: block;
+}
+
+.wf1 {
+    display: block;
+    background-color: var(--background-color);
+    color: #ffffff;
+    position: relative;
+    padding: 2rem;
+    text-align: left;
+    margin: 5rem auto;
+    min-width: 300px;
+    max-width: 40vw;
+    border: 2px solid var(--border-color);
+    border-radius: 16px;
+}
+
+.wf1 fieldset {
+    border: 2px solid var(--border-color);
+    border-radius: 6px;
+}
+
+.wf1 label {
+    display: block;
+    margin-top: 40px;
+}
+
+.wf1 input[type=text],
+.wf1 input[type=password],
+.wf1 input[type=email],
+.wf1 input[type=range] {
+    width: 80%;
+    max-width: 300px;
+    padding: 1rem;
+    display: block;
+    border-radius: 6px;
+}
+
+.wf1 legend {
+    border: 2px solid var(--border-color);
+    border-radius: 6px;
+    padding: .5rem;
+    background-color: var(--legend-color);
+    position: absolute;
+    top: -1rem;
+    left: 30px
+}
+
+.wf1 input:required {
+    border-left: solid 8px var(--invalid-color);
+}
+
+.wf1 input:required:valid {
+    border-left: solid 8px var(--valid-color);
+}
+
+#invalid-password {
+    color: rgb(255, 255, 255);
+}
+
+#form-submit {
+    margin: 2rem 0.2rem 0px;
+    padding: 1rem;
+    width: 98%;
+    max-width: 300px;
+}
