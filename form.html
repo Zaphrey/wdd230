@@ -44,9 +44,9 @@
     <main>
         <h1>Form Activity</h1>
         <form action="record.html" method="get" class="wf1">
-            <legend>Basic Form</legend>
             <fieldset>
-                <div>* Indicates a required field</div>
+                <legend>Basic Form</legend>
+                <div id="indicator">* Indicates a required field</div>
                 <label>Username* <input type="text" name="username" id="username" required></label>
                 <label>Password* <input type="password" name="password" id="password1" pattern="[a-zA-Z0-9]{8,}"
                         required placeholder="Minimum of 8 alphanumeric characters."

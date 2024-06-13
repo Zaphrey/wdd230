@@ -12,8 +12,6 @@ function checkSame() {
     if (passwordField1.value != passwordField2.value) {
         invalidAlert.textContent = "Passwords do not match. Please try again.";
         passwordField2.style.backgroundColor = "#fff0f3";
-        console.log(passwordField1.value);
-        console.log(passwordField2.value)
     }
     else {
         invalidAlert.textContent = "";
