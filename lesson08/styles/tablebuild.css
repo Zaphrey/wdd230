@@ -1,0 +1,33 @@
+table,
+caption {
+    background-color: black;
+    color: rgb(255, 255, 255);
+}
+
+table {
+    width: 400px;
+    height: 200px;
+}
+
+caption {
+    padding: 20px;
+    caption-side: top;
+}
+
+tbody {
+    text-align: center;
+    background-color: rgb(224, 223, 223);
+    color: black;
+}
+
+th[scope="col"] {
+    background-color: rgb(121, 121, 121);
+}
+
+th {
+    width: 100px;
+}
+
+tbody tr:nth-child(odd) {
+    background-color: rgb(255, 255, 255);
+}
