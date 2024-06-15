@@ -9,6 +9,10 @@
     --border-color: #39586a;
     --complementary-color: #F2AF29;
     --complementary-color-shadow: #ab7f27;
+    --legend-border-color: #2a414e;
+    --required-accent-color: #FFDF9E;
+    --valid-color: #C6DBC2;
+    --invalid-color: #FFCCCC;
 }
 
 /* Hamburger Menu*/
@@ -457,4 +461,138 @@ body {
     margin: 20px;
     color: var(--border-color);
     text-align: center;
+}
+
+/* Join form CSS */
+
+h1#membership {
+    text-align: center;
+    margin: auto;
+    padding-top: 1em;
+}
+
+#form-grid {
+    margin: auto;
+}
+
+.wf1 {
+    background-color: var(--border-color);
+    margin: 2em;
+    padding: 1rem;
+    color: var(--background-color);
+    border-radius: 10px;
+    min-width: 300px;
+}
+
+.wf1 fieldset {
+    background-color: var(--primary-color);
+    padding: 1rem;
+    margin: 1rem;
+    border-radius: 6px;
+    border: 2px solid var(--background-color);
+}
+
+.wf1 legend {
+    padding: .5rem;
+    background-color: var(--secondary-color);
+    box-shadow: 5px 5px 5px var(--legend-border-color);
+    border-radius: 6px;
+    border: 2px solid var(--legend-border-color);
+}
+
+.wf1 textarea {
+    display: block;
+}
+
+.wf1 input {
+    padding: .75rem;
+}
+
+.wf1 input[type="text"],
+.wf1 input[type="email"],
+.wf1 input[type="tel"] {
+    display: block;
+    width: 50%;
+    max-width: 300px;
+    border-radius: 6px;
+    min-width: 200px;
+}
+
+.wf1 input:required {
+    border-left: 8px solid var(--invalid-color);
+}
+
+.wf1 input:required:valid {
+    border-left: 8px solid var(--valid-color);
+}
+
+.wf1 input[type="radio"] {
+    margin: .8rem;
+    accent-color: var(--required-accent-color);
+    width: 1em;
+    height: 1em;
+}
+
+.wf1 label {
+    display: block;
+    margin-top: 1rem;
+}
+
+.required::before {
+    content: "*";
+    color: var(--required-accent-color);
+}
+
+.wf1 textarea {
+    resize: none;
+    width: 97%;
+    padding: 1%;
+    margin: 0px;
+    border-radius: 6px;
+}
+
+.wf1 h2 {
+    margin: 0px;
+    padding: 1rem;
+    text-align: left;
+    color: var(--background-color);
+}
+
+#submit-button {
+    padding: 1rem;
+    margin: .5rem 1rem;
+    background-color: var(--complementary-color);
+    border-radius: 6px;
+    border: 2px solid var(--complementary-color-shadow)
+}
+
+#submit-button:hover {
+    background-color: var(--complementary-color-shadow);
+}
+
+#form-grid>div {
+    background-color: var(--border-color);
+    margin: 2em 2em;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.description-card h2,
+p {
+    padding: 0px;
+    color: var(--background-color);
+}
+
+.description-card {
+    margin: 2em;
+    padding: 1em;
+    flex-grow: 1;
+    background-color: var(--primary-color);
+    border-radius: 6px;
+    border: 2px solid var(--background-color);
+}
+
+.description-card p {
+    font-size: 1.25em;
 }

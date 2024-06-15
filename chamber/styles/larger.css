@@ -111,4 +111,34 @@
         grid-row: 3/4;
         grid-column: 1/2;
     }
+
+    /* Form */
+    .wf1 {
+        max-width: 60vw;
+        background-color: var(--border-color);
+        margin: 2em;
+        padding: 1rem;
+        color: var(--background-color);
+        border-radius: 10px;
+        min-width: 400px;
+    }
+
+    #form-grid {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        grid-template-rows: 1fr;
+        max-width: 80vw;
+        margin: auto;
+    }
+
+    #form-grid form {
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+
+    #form-grid>div {
+        grid-column: 2/3;
+        grid-row: 1/2;
+        min-width: 350px;
+    }
 }

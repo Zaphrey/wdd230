@@ -153,3 +153,21 @@ h4.dark {
 a.dark {
     color: var(--complementary-color);
 }
+
+#description-card-container.dark {
+    color: var(--text-color);
+    background-color: var(--secondary-color);
+}
+
+.description-card p {
+    color: var(--text-color);
+}
+
+.wf1 {
+    color: var(--text-color);
+    background-color: var(--secondary-color);
+}
+
+h1#membership {
+    color: var(--text-color);
+}
