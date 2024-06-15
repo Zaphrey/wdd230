@@ -171,3 +171,7 @@ a.dark {
 h1#membership.dark {
     color: var(--text-color);
 }
+
+legend.dark {
+    box-shadow: 5px 5px 5px var(--border-color);
+}
