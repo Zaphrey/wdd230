@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta property="og:title" content="Macon Chamber of Commerce">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://zaphrey.github.io/wdd230/index.html">
+    <meta property="og:image" content="https://commons.wikimedia.org/wiki/File:Macon_night_skyline.JPG">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="WDD 230 - Frontend Web Development - Chamber home page - Zachary Humphreys">
+    <meta name="author" content="Zachary William Humphreys">
+    <title>Macon-Bibb Chamber of Commerce</title>
+
+    <link rel="icon" href="favicon.ico">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="stylesheet" href="styles/darkMode.css">
+</head>
+
+<body>
+    <header>
+        <a href="index.html" id="site-icon">
+            <img id="logo-img" src="images/temp_logo.webp" alt="Temporary site logo">
+        </a>
+        <p>Macon-Bibb <br> Chamber of Commerce</p>
+        <div>
+            <p> </p>
+            <button aria-label="Dark mode button" id="dark-mode-button">💡/⚫️</button>
+        </div>
+        <button aria-label="Menu button" id="menu-button" class="open"></button>
+    </header>
+    <nav class="open">
+        <a href="index.html">Home</a>
+        <a href="discover.html">Discover</a>
+        <a href="#">Directory</a>
+        <a id="join-button" href="join.html">Join</a>
+    </nav>
+    <main>
+        <h1 id="form-thanks">We've received your form! Welcome to the chamber.</h1>
+    </main>
+
+    <script src="scripts/getDates.js"></script>
+    <script src="scripts/hamburgerMenu.js"></script>
+    <script src="scripts/darkMode.js"></script>
+</body>
+
+</html>

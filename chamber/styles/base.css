@@ -596,3 +596,8 @@ p {
 .description-card p {
     font-size: 1.25em;
 }
+
+#form-thanks {
+    text-align: center;
+    padding: 4em;
+}
