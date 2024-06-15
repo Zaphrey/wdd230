@@ -159,15 +159,15 @@ a.dark {
     background-color: var(--secondary-color);
 }
 
-.description-card p {
+.description-card p.dark {
     color: var(--text-color);
 }
 
-.wf1 {
+.wf1.dark {
     color: var(--text-color);
     background-color: var(--secondary-color);
 }
 
-h1#membership {
+h1#membership.dark {
     color: var(--text-color);
 }
