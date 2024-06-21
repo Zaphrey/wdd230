@@ -32,4 +32,4 @@ const displayLinks = (lessons) => {
     })
 }
 
-getLinks("../data/links.json");
+getLinks(linksUrl);
