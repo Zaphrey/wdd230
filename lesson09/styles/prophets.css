@@ -1,0 +1,37 @@
+body {
+    margin: 0px;
+}
+
+h1 {
+    text-align: center;
+    padding: 2em;
+}
+
+#cards {
+    margin: 0px 2em;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: .5em;
+}
+
+.prophet-card {
+    border: 8px ridge rgb(138, 138, 138);
+    text-align: center;
+    background-color: rgb(47, 55, 62);
+    padding: 1em;
+    color: white;
+}
+
+.prophet-card>img {
+    width: 95%;
+    height: auto;
+    border: 4px inset goldenrod;
+}
+
+footer {
+    color: white;
+    background-color: rgb(29, 55, 76);
+    text-align: center;
+    padding: 2em;
+    margin: 2em 0px 0px 0px;
+}

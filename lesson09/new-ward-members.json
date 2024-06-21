@@ -1,0 +1,53 @@
+{
+    "familyName": "McClure",
+    "joinDate": "04/16/2011",
+    "familySize": "9",
+    "visitedByBishoproc": true,
+    "familyMembers": [
+        {
+            "name": "John",
+            "gender": "Male",
+            "birthDate": "07/21/1969"
+        },
+        {
+            "name": "Jane",
+            "gender": "Female",
+            "birthDate": "02/07/1976"
+        },
+        {
+            "name": "James",
+            "gender": "Male",
+            "birthDate": "01/13/1990"
+        },
+        {
+            "name": "Jacob",
+            "gender": "Male",
+            "birthDate": "04/25/1991"
+        },
+        {
+            "name": "Karen",
+            "gender": "Female",
+            "birthDate": "06/04/1996"
+        },
+        {
+            "name": "Charlotte",
+            "gender": "Female",
+            "birthDate": "11/09/1998"
+        },
+        {
+            "name": "Karlie",
+            "gender": "Female",
+            "birthDate": "12/12/2001"
+        },
+        {
+            "name": "Emily",
+            "gender": "Female",
+            "birthDate": "05/28/2002"
+        },
+        {
+            "name": "Zak",
+            "gender": "Male",
+            "birthDate": "07/21/2004"
+        }
+    ]
+}
