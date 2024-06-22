@@ -28,6 +28,7 @@ const buildCompanyCard = (member) => {
 
     // Icon:
     icon.setAttribute("src", member.icon);
+    icon.setAttribute("alt", `${member.name} logo`);
     icon.setAttribute("width", 150);
     icon.setAttribute("height", 100);
     icon.setAttribute("loading", "lazy");
