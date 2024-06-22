@@ -34,13 +34,17 @@
         <button aria-label="Menu button" id="menu-button" class="open"></button>
     </header>
     <nav class="open">
-        <a href="#">Home</a>
+        <a href="index.html">Home</a>
         <a href="discover.html">Discover</a>
         <a href="#">Directory</a>
         <a id="join-button" href="join.html">Join</a>
     </nav>
     <main>
-        <div>
+        <div id="buttons">
+            <button id="grid-button">Grid</button>
+            <button id="column-button">Column</button>
+        </div>
+        <div id="directory-card-container">
             <h1>Directory</h1>
             <div id="directory-cards">
 
@@ -58,6 +62,8 @@
     <script src="scripts/getDates.js"></script>
     <script src="scripts/hamburgerMenu.js"></script>
     <script src="scripts/darkMode.js"></script>
+    <script src="scripts/populateDirectory.js"></script>
+    <script src="scripts/columntoggle.js"></script>
 </body>
 
 </html>

@@ -8,6 +8,7 @@
     --border-color: #181f23;
     --complementary-color: #F2AF29;
     --complementary-color-shadow: #ab7f27;
+    --other-background: #3d424e;
 }
 
 main.dark {
@@ -39,7 +40,7 @@ body.dark {
 }
 
 nav a.dark {
-    background-color: var(--background-color);
+    background-color: var(--secondary-color);
     color: var(--text-color);
 }
 
@@ -174,4 +175,20 @@ h1#membership.dark {
 
 legend.dark {
     box-shadow: 5px 5px 5px var(--border-color);
+}
+
+/* Directory */
+
+.directory-card.dark>img {
+    padding: 1em 0;
+    background-color: #fff;
+    border: 2px solid var(--text-color);
+}
+
+#directory-card-container.dark>h1 {
+    color: var(--text-color);
+}
+
+#buttons.dark button.dark {
+    color: var(--text-color);
 }

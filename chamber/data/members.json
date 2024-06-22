@@ -3,7 +3,7 @@
         {
             "name": "Georgia Farm Bureau",
             "address": "100 Northside Crossing, Macon, GA 31204",
-            "phone": "478-477-5740",
+            "phone": "(478) 477-5740",
             "email": "",
             "url": "https://www.gfb.org/",
             "icon": "https://zaphrey.github.io/wdd230/chamber/images/georgia-farm-bureau-logo.webp",
@@ -12,7 +12,7 @@
         {
             "name": "Divis Educational Services",
             "address": "1125 Walnut St Suite A, Macon, GA 31201",
-            "phone": "478-309-0631",
+            "phone": "(478) 309-0631",
             "email": "",
             "url": "https://divised.corsizio.com/",
             "icon": "https://zaphrey.github.io/wdd230/chamber/images/divis-educational-services-logo.webp",
@@ -30,7 +30,7 @@
         {
             "name": "Mueseum of Arts and Sciences",
             "address": "4182 Forsyth Rd, Macon, GA 31210",
-            "phone": "478-477-3232",
+            "phone": "(478) 477-3232",
             "email": "",
             "url": "https://www.masmacon.org/",
             "icon": "https://zaphrey.github.io/wdd230/chamber/images/mas-logo.webp",
@@ -39,7 +39,7 @@
         {
             "name": "Washington Memorial Library",
             "address": "1180 Washington Ave, Macon, GA 31201",
-            "phone": "478-300-6744",
+            "phone": "(478) 300-6744",
             "email": "",
             "url": "https://bibblib.org/directory_page_T49_R2.php",
             "icon": "https://zaphrey.github.io/wdd230/chamber/images/mrl-logo.webp",
@@ -48,7 +48,7 @@
         {
             "name": "Ocmulgee Mounds National Historical Park",
             "address": "1207 Emery Hwy, Macon, GA 31217",
-            "phone": "478-752-8257",
+            "phone": "(478) 752-8257",
             "email": "",
             "url": "https://www.nps.gov/ocmu/index.htm",
             "icon": "https://zaphrey.github.io/wdd230/chamber/images/nps-logo.webp",
@@ -57,7 +57,7 @@
         {
             "name": "The Creative Alternative",
             "address": "262 Riley Ave, Macon, GA 31204",
-            "phone": "478-474-8457",
+            "phone": "(478) 474-8457",
             "email": "",
             "url": "https://www.creativealternative.art/",
             "icon": "https://zaphrey.github.io/wdd230/chamber/images/tca-logo.webp",
