@@ -12,12 +12,12 @@ const getMembers = async (url) => {
 }
 
 const populateDirectory = (members) => {
-    members.forEach(member => {
-        buildCompanyCard(member)
+    members.forEach((member, index) => {
+        buildCompanyCard(member, index)
     });
 }
 
-const buildCompanyCard = (member) => {
+const buildCompanyCard = (member, index = 0) => {
     let card = document.createElement("div");
     let icon = document.createElement("img");
     let name = document.createElement("h2");
@@ -31,7 +31,12 @@ const buildCompanyCard = (member) => {
     icon.setAttribute("alt", `${member.name} logo`);
     icon.setAttribute("width", 150);
     icon.setAttribute("height", 100);
-    icon.setAttribute("loading", "lazy");
+
+    // Apply lazy loading to images with an order greater than 3:
+    if (index > 3) {
+        icon.setAttribute("loading", "lazy");
+    }
+
     card.appendChild(icon);
 
     name.textContent = member.name;
