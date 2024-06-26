@@ -155,6 +155,29 @@ body {
     padding: 0px;
 }
 
+#weather-container {
+    height: 2em;
+    width: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#weather {
+    max-width: 20ch;
+    flex: 1;
+    margin: auto 0px;
+}
+
+#weather-icon {
+    flex: 1;
+    height: 2em;
+    width: 2em;
+    max-height: 2em;
+    max-width: 2em;
+    margin: auto 0px;
+}
+
 .card ul {
     list-style-type: none;
     background-color: aliceblue;
