@@ -137,7 +137,7 @@ function getWeatherIcon(iconId) {
 function displayResults(data) {
     let forecastData = getDailyForecastFromHourly(data)
 
-    for (let index = 0; index < 3; index++) {
+    for (let index = 1; index < 4; index++) {
         let forecastInfo = forecastData[index];
 
         let container = document.createElement("div");
