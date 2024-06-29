@@ -370,6 +370,10 @@ a {
     border-radius: var(--border-radius);
 }
 
+.weather-card.dark div.dark {
+    color: #fff;
+}
+
 .weather-card div {
     color: var(--background-color);
     background: linear-gradient(to right, var(--complementary-color-other) 33%, var(--complementary-color) 66%);
@@ -832,6 +836,7 @@ p {
     --complementary-color-shadow: #ab7f27;
     --weather-gradient-color: #899196;
     --other-background: #3d424e;
+    --footer-color: #1c1f25;
 }
 
 main.dark {
@@ -914,7 +919,6 @@ header p.dark {
 }
 
 #weather-section.dark {
-    background-color: var(--border-color);
     padding-bottom: 20px;
 }
 
@@ -923,7 +927,7 @@ header p.dark {
 }
 
 footer.dark {
-    background-color: #2c303a;
+    background-color: var(--footer-color);
     margin: 0px;
     padding: 40px 20px 20px;
 }
