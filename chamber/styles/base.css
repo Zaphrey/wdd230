@@ -8,12 +8,18 @@
     --text-color: #0D1321;
     --border-color: #39586a;
     --complementary-color: #F2AF29;
+    --complementary-color-other: #dc9b1a;
     --complementary-color-shadow: #ab7f27;
     --legend-border-color: #2a414e;
     --required-accent-color: #FFDF9E;
     --valid-color: #C6DBC2;
     --invalid-color: #FFCCCC;
     --other-background: #ebf8ff;
+    --weather-gradient-color: #bbc5cb;
+    --border-radius: 4px;
+    --banner-color: #efeec0;
+    --banner-border-color: #b3b286;
+    --banner-button-hover-color: #606049;
 }
 
 /* Hamburger Menu*/
@@ -36,38 +42,30 @@ body {
 }
 
 header {
+    z-index: 2;
+    position: sticky;
+    top: 0;
+    background: linear-gradient(var(--primary-color), var(--secondary-color));
+}
+
+nav {
+    z-index: 2;
+    position: sticky;
+    top: 75px;
+    text-align: center;
+    height: auto;
+}
+
+header {
     height: 75px;
     display: grid;
     grid-template-columns: auto 1fr 100px 75px;
+    color: var(--background-color);
 }
 
 header p {
     grid-column: 2/3;
     text-align: center;
-    padding: 5px;
-    color: var(--background-color);
-}
-
-#menu-button {
-    color: var(--background-color);
-    background-color: transparent;
-    font-size: xx-large;
-    border: 0px;
-    height: 100%;
-    padding-bottom: 15px;
-}
-
-#menu-button::before {
-    content: "X";
-}
-
-#menu-button:hover {
-    color: var(--border-color);
-}
-
-#dark-mode-button {
-    border-radius: 25px;
-    border: none;
     padding: 5px;
 }
 
@@ -78,14 +76,6 @@ header div {
 
 header div p {
     margin: 0px;
-}
-
-header div p::before {
-    content: "Light mode"
-}
-
-header div p.dark::before {
-    content: "Dark mode"
 }
 
 header,
@@ -109,6 +99,33 @@ nav a:hover {
     background-color: var(--border-color);
 }
 
+#logo-img {
+    filter: brightness(50%);
+}
+
+#menu-button {
+    color: var(--background-color);
+    background-color: transparent;
+    font-size: xx-large;
+    border: 0px;
+    height: 100%;
+    padding-bottom: 15px;
+}
+
+#menu-button::before {
+    content: "X";
+}
+
+#menu-button:hover {
+    color: var(--border-color);
+}
+
+#dark-mode-button {
+    border-radius: var(--border-radius);
+    border: none;
+    padding: 5px;
+}
+
 #site-icon {
     display: block;
     width: 100px;
@@ -121,11 +138,6 @@ nav a:hover {
     height: 75px;
     max-width: 1000px;
     max-height: 1000px;
-}
-
-nav {
-    text-align: center;
-    height: auto;
 }
 
 img {
@@ -196,17 +208,53 @@ a {
     text-decoration: none;
 }
 
+#banner {
+    background-color: var(--banner-color);
+    width: 90vw;
+    color: var(--legend-border-color);
+    border: 2px solid var(--banner-border-color);
+    box-shadow: none;
+    margin: 2em auto 0px auto;
+    padding: 0px;
+    max-width: 40em;
+}
+
+#banner.hidden {
+    display: none;
+}
+
+#banner div {
+    position: relative;
+    background-color: var(--banner-border-color);
+    width: auto;
+    padding: 1em;
+    text-align: center;
+}
+
+#banner button {
+    border-radius: var(--border-radius);
+    background-color: var(--banner-border-color);
+    border: 2px solid var(--banner-button-hover-color);
+    position: absolute;
+    top: -2px;
+    right: -2px;
+    height: 62px;
+    width: 62px;
+}
+
+#banner button:hover {
+    background-color: var(--banner-button-hover-color);
+}
+
+#banner p {
+    color: var(--legend-border-color);
+    padding: 1em;
+}
+
 /* Current Events */
 
 #events-section {
     background-color: var(--background-color);
-    padding-bottom: 40px;
-}
-
-h2 {
-    margin: 0px;
-    padding: 40px;
-    text-align: center;
 }
 
 #event-card-container {
@@ -214,26 +262,28 @@ h2 {
     flex-direction: column;
 }
 
-.event-card {
-    border-radius: 5px;
+.card {
+    border-radius: var(--border-radius);
     box-shadow: 5px 5px 5px var(--secondary-color);
-    margin: 10px 30px;
-    padding: 20px;
     background-color: var(--primary-color);
+    margin: 1em;
+    color: var(--background-color);
+    font-size: larger;
+    padding: 0.5em;
+    border: 2px solid var(--border-color);
+}
+
+.card img {
+    border-radius: var(--border-radius);
+    object-fit: contain;
+    height: auto;
 }
 
 .event-card img {
-    border-radius: 5px;
     object-fit: cover;
     width: 100%;
-    height: 30vw;
     max-width: 100%;
     max-height: 40vw;
-}
-
-.event-card p {
-    font-size: larger;
-    color: var(--background-color);
 }
 
 /* Spotlight Members Section */
@@ -252,19 +302,18 @@ h2 {
     padding-bottom: 30px;
 }
 
-.member-card {
-    border-radius: 10px;
-    margin: 10px;
+.member-card,
+.member-card p {
     background-color: var(--background-color);
     text-align: center;
+    color: var(--border-color);
+    font-size: larger;
+    font-family: Oswald sans-serif;
 }
 
 .member-card img {
-    border-radius: 20px;
-    object-fit: cover;
-    padding: 10px;
     width: 70%;
-    height: 15vw;
+    height: 10vh;
     max-width: none;
     max-height: none;
 }
@@ -276,43 +325,69 @@ h2 {
     flex-direction: row;
     width: 100%;
     overflow-x: auto;
-    counter-reset: weather -1;
-    counter-set: weather 0;
+}
+
+#daily-weather-info {
+    max-width: 25em;
+    width: 85vw;
+    min-width: 0px;
+    margin: 1em auto;
+    background: linear-gradient(to bottom, var(--complementary-color-other) 33%, var(--complementary-color) 66%);
+}
+
+#daily-weather-info h2 {
+    padding: 0.5em;
+    color: #fff;
+}
+
+#daily-weather-info.dark h2.dark {
+    padding: 0.5em;
+    color: #fff;
+}
+
+#daily-weather-info div.weather-card {
+    padding: 0px;
+    min-width: 0px;
+}
+
+#daily-weather-info div.weather-card img {
+    border-radius: 0px;
+    padding: auto;
+    top: -2px;
+    right: -2px;
 }
 
 .weather-card {
+    overflow: hidden;
+    position: relative;
+    border: 2px solid var(--complementary-color-shadow);
+    box-shadow: none;
     counter-increment: weather 1;
-    display: grid;
-    grid-template-columns: 1fr 3fr;
-    grid-template-rows: 1fr auto;
-    /*background-image: linear-gradient(to top left, var(--complementary-color), var(--complementary-color-shadow));*/
     flex: auto;
     margin: 10px;
-    padding: 10px;
-    background-color: #F2AF29;
-    min-width: 40vw;
-    border-radius: 10px;
+    background-color: var(--complementary-color);
+    min-width: 20em;
+    border-radius: var(--border-radius);
+}
+
+.weather-card div {
+    color: var(--background-color);
+    background: linear-gradient(to right, var(--complementary-color-other) 33%, var(--complementary-color) 66%);
+    padding: 0.5em;
+}
+
+.weather-card div:nth-child(odd) {
+    background-color: var(--complementary-color-shadow);
+    background: linear-gradient(to right, var(--complementary-color-shadow) 33%, var(--complementary-color) 66%);
 }
 
 .weather-card img {
-    border-radius: 10px;
-}
-
-.weather-text {
-    grid-column: 1 / 3;
-}
-
-.weather-information {
-    text-align: right;
-}
-
-.card-num {
-    display: contents;
-    text-align: right;
-}
-
-.card-num::before {
-    content: counter(weather, numeric) "";
+    padding: 1em;
+    position: absolute;
+    background: radial-gradient(var(--weather-gradient-color), var(--background-color));
+    border-bottom-left-radius: var(--border-radius);
+    top: 0px;
+    right: 0px;
 }
 
 /* Footer */
@@ -322,14 +397,12 @@ footer {
     padding: 20px;
 }
 
-p {
-    font-family: Roboto;
-}
-
 h2 {
     font-family: Oswald;
     color: var(--border-color);
     text-align: center;
+    margin: 0px;
+    padding: 40px;
 }
 
 footer p {
@@ -745,4 +818,192 @@ p {
 
 #buttons button.active-button {
     background-color: var(--legend-border-color);
+}
+
+/* Dark mode selectiors */
+
+:root.dark {
+    --primary-color: #445863;
+    --secondary-color: #36434a;
+    --background-color: #2c303a;
+    --text-color: #ddd2be;
+    --border-color: #181f23;
+    --complementary-color: #F2AF29;
+    --complementary-color-shadow: #ab7f27;
+    --weather-gradient-color: #899196;
+    --other-background: #3d424e;
+}
+
+main.dark {
+    background-color: var(--background-color);
+}
+
+#site-name.dark {
+    color: var(--text-color);
+}
+
+#menu-button.dark {
+    color: var(--text-color);
+}
+
+#menu-button.dark:hover {
+    color: var(--secondary-color);
+}
+
+#call-to-action.dark {
+    color: var(--text-color);
+}
+
+nav a.dark {
+    background-color: var(--secondary-color);
+    color: var(--text-color);
+}
+
+nav a.dark:hover {
+    background-color: var(--border-color);
+}
+
+header p.dark {
+    color: var(--text-color);
+}
+
+#call-to-action.dark {
+    color: var(--border-color);
+}
+
+#hero-attribution-container.dark {
+    text-align: left;
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+#hero-attribution-container a.dark {
+    color: var(--complementary-color);
+}
+
+#hero-attribution-container a.dark:visited {
+    color: var(--complementary-color-shadow);
+}
+
+#events-section h2.dark {
+    color: var(--text-color);
+}
+
+.event-card.dark {
+    box-shadow: 5px 5px 5px var(--border-color);
+}
+
+.event-card p.dark {
+    color: var(--text-color);
+}
+
+#spotlight-members-section {
+    background-color: var(--primary-color);
+}
+
+#spotlight-members-section h2.dark {
+    color: var(--text-color);
+}
+
+.member-card.dark {
+    background-color: var(--background-color);
+}
+
+.member-card p.dark {
+    color: var(--text-color);
+}
+
+#weather-section.dark {
+    background-color: var(--border-color);
+    padding-bottom: 20px;
+}
+
+#weather-section h2.dark {
+    color: var(--text-color);
+}
+
+footer.dark {
+    background-color: #2c303a;
+    margin: 0px;
+    padding: 40px 20px 20px;
+}
+
+footer p.dark {
+    color: var(--text-color);
+}
+
+#last-modified.dark {
+    color: var(--text-color);
+}
+
+#dicover-side-1.dark p,
+#discover-side-2.dark p,
+#discover-side-3.dark p {
+    padding: 0px;
+    margin: 0px;
+    color: var(--text-color);
+    text-align: left;
+}
+
+#discover-side-1.dark>div,
+#discover-side-2.dark>div,
+#discover-side-3.dark>div {
+    border: 2px solid var(--border-color);
+    background-color: var(--background-color);
+    margin: 5%;
+    padding: 5%;
+}
+
+#discover-header.dark,
+h2.dark,
+h3.dark,
+h4.dark {
+    color: var(--text-color);
+}
+
+.caption.dark,
+.attribution.dark {
+    color: var(--text-color);
+}
+
+a.dark {
+    color: var(--complementary-color);
+}
+
+#description-card-container.dark {
+    color: var(--text-color);
+    background-color: var(--secondary-color);
+}
+
+.description-card p.dark {
+    color: var(--text-color);
+}
+
+.wf1.dark {
+    color: var(--text-color);
+    background-color: var(--secondary-color);
+}
+
+h1#membership.dark {
+    color: var(--text-color);
+}
+
+legend.dark {
+    box-shadow: 5px 5px 5px var(--border-color);
+}
+
+/* Directory */
+
+.directory-card.dark>img {
+    padding: 1em 0;
+    background-color: #fff;
+    border: 2px solid var(--text-color);
+}
+
+#directory-card-container.dark>h1 {
+    color: var(--text-color);
+}
+
+#buttons.dark button.dark {
+    color: var(--text-color);
 }

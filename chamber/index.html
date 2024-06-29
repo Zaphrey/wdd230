@@ -18,7 +18,6 @@
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/medium.css">
     <link rel="stylesheet" href="styles/larger.css">
-    <link rel="stylesheet" href="styles/darkMode.css">
 </head>
 
 <body>
@@ -28,7 +27,6 @@
         </a>
         <p>Macon-Bibb <br> Chamber of Commerce</p>
         <div>
-            <p> </p>
             <button aria-label="Dark mode button" id="dark-mode-button">💡/⚫️</button>
         </div>
         <button aria-label="Menu button" id="menu-button" class="open"></button>
@@ -63,26 +61,33 @@
                 <p>The Macon-Bibb Chamber of Commerce aims to improve education by providing a means for businesses and
                     educational
                     services to entertain the community and teach one another.</p>
-                <a id="call-to-action" href="#">Join us!</a>
+                <a id="call-to-action" href="join.html">Join us!</a>
             </div>
+        </div>
+        <div id="banner" class="card">
+            <div>
+                Weekly Meeting alert
+                <button id="close-button">X</button>
+            </div>
+            <p>Join us this Wednesday for our weekly meeting starting @ 7:00pm! Visitors welcome!</p>
         </div>
         <section id="events-section">
             <h2>Current events</h2>
             <div id="event-card-container">
-                <div class="event-card">
-                    <img src="images/placeholder.jpeg" alt="PLACEHOLDER">
+                <div class="event-card card">
+                    <img src="images/placeholder.jpeg" loading="lazy" alt="PLACEHOLDER">
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, ipsa animi et ducimus porro
                         consequuntur commodi, iste enim reprehenderit alias voluptatum nostrum quibusdam vel voluptates
                         vitae delectus, accusamus similique tempora?</p>
                 </div>
-                <div class="event-card">
-                    <img src="images/placeholder.jpeg" alt="PLACEHOLDER">
+                <div class="event-card card">
+                    <img src="images/placeholder.jpeg" loading="lazy" alt="PLACEHOLDER">
                     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Autem, repudiandae quis impedit
                         officiis iure eius sapiente doloribus sequi animi numquam quidem ipsa provident quod maiores
                         iusto cupiditate repellat aut sed?</p>
                 </div>
-                <div class="event-card">
-                    <img src="images/placeholder.jpeg" alt="PLACEHOLDER">
+                <div class="event-card card">
+                    <img src="images/placeholder.jpeg" loading="lazy" alt="PLACEHOLDER">
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam officia aut debitis quo
                         assumenda ratione earum vitae laborum saepe reiciendis suscipit culpa dignissimos quidem
                         maiores, minus rerum eius, deleniti commodi.</p>
@@ -93,99 +98,31 @@
             <h2>Our spotlight members</h2>
             <div id="member-card-container">
                 <!--!!DISCLAIMER!!: Company names are temporary placeholders for the time being.-->
-                <div class="member-card">
+                <div class="member-card card">
                     <!--Company logo or hero image-->
-                    <img src="images/placeholder.jpeg" alt="PLACEHOLDER">
+                    <img src="images/divis-educational-services-logo.webp" loading="lazy" alt="spotlight member image">
                     <p>Divis Educational Services</p>
                 </div>
-                <div class="member-card">
-                    <img src="images/placeholder.jpeg" alt="PLACEHOLDER">
+                <div class="member-card card">
+                    <img src="images/georgia-farm-bureau-logo.webp" loading="lazy" alt="spotlight member image">
                     <p>Georgia Farm Bureau</p>
+                </div>
+                <div class="member-card card">
+                    <img src="images/GFA-logo.webp" loading="lazy" alt="spotlight member image">
+                    <p>Georgia Foundation for Agriculture</p>
                 </div>
             </div>
         </section>
         <section id="weather-section">
-            <h2>7-day forecast</h2>
+            <div id="daily-weather-info" class="card weather-card">
+                <h2>Current Weather</h2>
+                <p></p>
+            </div>
+            <h2>3-day forecast</h2>
             <!--Alternatively we could use built in emoticons in favor of the weather images. Depends on how everything works out.-->
             <!--Will update cards to hold more accurate information once I have access to the proper data.-->
             <div id="weather-card-container">
-                <div class="weather-card">
-                    <img src="images/weather-icon.webp" alt="PLACEHOLDER">
-                    <div class="weather-information">
-                        <p class="temp">Temp: 82°F</p>
-                        <p class="wind-speed">Wind speed:</p>
-                        <p class="wind-chill">Wind chill:</p>
-                    </div>
-                    <p class="weather-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ducimus, nulla.
-                    </p>
-                    <p class="card-num"></p>
-                </div>
-                <div class="weather-card">
-                    <img src="images/weather-icon.webp" alt="PLACEHOLDER">
-                    <div class="weather-information">
-                        <p class="temp">Temp: 82°F</p>
-                        <p class="wind-speed">Wind speed:</p>
-                        <p class="wind-chill">Wind chill:</p>
-                    </div>
-                    <p class="weather-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ducimus, nulla.
-                    </p>
-                    <p class="card-num"></p>
-                </div>
-                <div class="weather-card">
-                    <img src="images/weather-icon.webp" alt="PLACEHOLDER">
-                    <div class="weather-information">
-                        <p class="temp">Temp: 82°F</p>
-                        <p class="wind-speed">Wind speed:</p>
-                        <p class="wind-chill">Wind chill:</p>
-                    </div>
-                    <p class="weather-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ducimus, nulla.
-                    </p>
-                    <p class="card-num"></p>
-                </div>
-                <div class="weather-card">
-                    <img src="images/weather-icon.webp" alt="PLACEHOLDER">
-                    <div class="weather-information">
-                        <p class="temp">Temp: 82°F</p>
-                        <p class="wind-speed">Wind speed:</p>
-                        <p class="wind-chill">Wind chill:</p>
-                    </div>
-                    <p class="weather-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ducimus, nulla.
-                    </p>
-                    <p class="card-num"></p>
-                </div>
-                <div class="weather-card">
-                    <img src="images/weather-icon.webp" alt="PLACEHOLDER">
-                    <div class="weather-information">
-                        <p class="temp">Temp: 82°F</p>
-                        <p class="wind-speed">Wind speed:</p>
-                        <p class="wind-chill">Wind chill:</p>
-                    </div>
-                    <p class="weather-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ducimus, nulla.
-                    </p>
-                    <p class="card-num"></p>
-                </div>
-                <div class="weather-card">
-                    <img src="images/weather-icon.webp" alt="PLACEHOLDER">
-                    <div class="weather-information">
-                        <p class="temp">Temp: 82°F</p>
-                        <p class="wind-speed">Wind speed:</p>
-                        <p class="wind-chill">Wind chill:</p>
-                    </div>
-                    <p class="weather-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ducimus, nulla.
-                    </p>
-                    <p class="card-num"></p>
-                </div>
-                <div class="weather-card">
-                    <img src="images/weather-icon.webp" alt="PLACEHOLDER">
-                    <div class="weather-information">
-                        <p class="temp">Temp: 82°F</p>
-                        <p class="wind-speed">Wind speed:</p>
-                        <p class="wind-chill">Wind chill:</p>
-                    </div>
-                    <p class="weather-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ducimus, nulla.
-                    </p>
-                    <p class="card-num"></p>
-                </div>
+
             </div>
         </section>
     </main>
@@ -200,7 +137,8 @@
     <script src="scripts/getDates.js"></script>
     <script src="scripts/hamburgerMenu.js"></script>
     <script src="scripts/darkMode.js"></script>
-    <script src="scripts/windchill.js"></script>
+    <script src="scripts/weather.js"></script>
+    <script src="scripts/banner.js"></script>
 </body>
 
 </html>
