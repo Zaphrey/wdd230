@@ -3,6 +3,7 @@ const columnToggle = document.getElementById("column-button");
 const cardContainer = document.getElementById("directory-cards");
 const cardDirectory = document.getElementById("directory-card-container");
 
+let gridKey = "use-grid-ls";
 let gridEnabled = true;
 
 gridToggle.classList.add("active-button");
@@ -10,6 +11,7 @@ gridToggle.classList.add("active-button");
 const toggleGrid = () => {
     if (!gridEnabled) {
         gridEnabled = true;
+        localStorage.setItem(gridKey, "true");
 
         updateNodes();
     }
@@ -18,6 +20,7 @@ const toggleGrid = () => {
 const toggleColumn = () => {
     if (gridEnabled) {
         gridEnabled = false;
+        localStorage.setItem(gridKey, "false");
 
         updateNodes();
     }

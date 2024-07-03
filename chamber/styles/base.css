@@ -17,6 +17,7 @@
     --other-background: #ebf8ff;
     --weather-gradient-color: #bbc5cb;
     --border-radius: 4px;
+    --border-radius-larger: 6px;
     --banner-color: #efeec0;
     --banner-border-color: #b3b286;
     --banner-button-hover-color: #606049;
@@ -433,10 +434,12 @@ body {
     background-color: var(--primary-color);
     display: flex;
     flex-direction: column;
-    padding: 10px 0px
+    padding: 10px 0px;
+    border-radius: var(--border-radius);
 }
 
 .discover-card {
+    border-radius: var(--border-radius);
     position: relative;
     height: 100%;
     width: 100%;
@@ -444,6 +447,7 @@ body {
 
 .caption,
 .attribution {
+    border-radius: var(--border-radius);
     position: absolute;
     top: 15px;
     left: 15px;
@@ -465,15 +469,19 @@ body {
     height: auto;
     max-width: none;
     max-height: 40vh;
+    border-radius: var(--border-radius);
+    border: 2px solid var(--border-color);
 }
+
 
 #discover-img-container {
     border: 2px solid var(--border-color);
+    border-radius: var(--border-radius);
     background-color: var(--secondary-color);
     padding: 10px;
     display: flex;
     flex-direction: column;
-    overflow: scroll;
+    overflow-y: scroll;
     max-height: 100vh;
     grid-column: 2/3;
 }
@@ -483,22 +491,28 @@ body {
     grid-column: 1/2;
 }
 
-#dicover-side-1 p,
-#discover-side-2 p,
-#discover-side-3 p {
+.discover-side p {
+    font-size: larger;
     padding: 0px;
     margin: 0px;
     color: var(--text-color);
     text-align: left;
 }
 
-#discover-side-1>div,
-#discover-side-2>div,
-#discover-side-3>div {
+.discover-side>div {
+    border-radius: var(--border-radius);
     border: 2px solid var(--text-color);
     background-color: var(--background-color);
     margin: 5%;
     padding: 5%;
+}
+
+
+.discover-side {
+    border-radius: var(--border-radius);
+    text-align: center;
+    border: 2px solid var(--border-color);
+    background-color: var(--secondary-color);
 }
 
 #discover-side-1>div {
@@ -512,6 +526,7 @@ body {
 }
 
 #event-header img {
+    border-radius: var(--border-radius);
     object-fit: contain;
     width: 100%;
     height: auto;
@@ -519,11 +534,6 @@ body {
     max-height: none;
 }
 
-.discover-side {
-    text-align: center;
-    border: 2px solid var(--border-color);
-    background-color: var(--secondary-color);
-}
 
 #discover-description {
     color: var(--text-color);
@@ -682,11 +692,12 @@ p {
 /* Directory */
 
 #directory-card-container {
+    border-radius: var(--border-radius-larger);
     margin: 2em auto;
     width: 75vw;
     height: 100%;
     background-color: var(--secondary-color);
-    border: 4px solid var(--border-color);
+    border: 2px solid var(--border-color);
     padding-bottom: 1em;
 }
 
@@ -708,8 +719,9 @@ p {
 }
 
 .directory-card {
+    border-radius: var(--border-radius-larger);
     background-color: var(--background-color);
-    border: 4px solid var(--border-color);
+    border: 2px solid var(--border-color);
     padding: 1em;
     margin: 1em;
     text-align: center;
@@ -728,7 +740,7 @@ p {
 .directory-card.column>h2,
 .directory-card.column>p {
     text-align: left;
-    color: var(--text-color);
+    color: var(--border-color);
     font-family: "Roboto";
     font-size: large;
     font-weight: normal;
@@ -745,14 +757,15 @@ p {
     font-weight: normal;
     padding: .5em 0px;
     margin: 0px;
+    color: var(--secondary-color);
 }
 
 .directory-card.column:first-child {
-    border-top: 4px solid var(--border-color);
+    border-top: 2px solid var(--border-color);
 }
 
 .directory-card.column:last-child {
-    border-bottom: 4px solid var(--border-color);
+    border-bottom: 2px solid var(--border-color);
 }
 
 .directory-card.column:nth-child(even) {
@@ -777,6 +790,7 @@ p {
 }
 
 .directory-card img {
+    border-radius: var(--border-radius);
     max-width: none;
     max-height: none;
     width: 100%;
@@ -799,6 +813,7 @@ p {
 }
 
 #buttons button {
+    border-radius: var(--border-radius-larger);
     background-color: var(--primary-color);
     border: 2px solid var(--border-color);
     color: var(--background-color);
@@ -1001,6 +1016,15 @@ legend.dark {
     padding: 1em 0;
     background-color: #fff;
     border: 2px solid var(--text-color);
+}
+
+.directory-card.column.dark>p.dark,
+.directory-card.column.dark>h2.dark {
+    color: var(--text-color);
+}
+
+.directory-card.column.dark>a.dark {
+    color: var(--complementary-color);
 }
 
 #directory-card-container.dark>h1 {

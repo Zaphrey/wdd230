@@ -15,6 +15,12 @@ const populateDirectory = (members) => {
     members.forEach((member, index) => {
         buildCompanyCard(member, index)
     });
+
+    if (isDark) {
+        directoryContainer.querySelectorAll("*").forEach(element => {
+            element.classList.add("dark")
+        })
+    }
 }
 
 const buildCompanyCard = (member, index = 0) => {
@@ -63,8 +69,8 @@ const buildCompanyCard = (member, index = 0) => {
 
     membership.textContent = `Status: ${member.membership}`;
     card.appendChild(membership);
+    card.classList.add("directory-card")
 
-    card.classList.toggle("directory-card")
     directoryContainer.appendChild(card);
 }
 

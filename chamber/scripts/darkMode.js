@@ -6,21 +6,30 @@ const h1 = document.querySelector("h1");
 const darkModeKey = "is-dark-mode-ls";
 let isDark = localStorage.getItem(darkModeKey) === "true";
 
-function toggleDarkMode() {
-    root.classList.toggle("dark");
+function setDarkMode(setting = "on") {
+    if (setting === "on") {
+        root.classList.add("dark");
 
-    body.querySelectorAll("*").forEach(element => {
-        element.classList.toggle("dark")
-    })
+        body.querySelectorAll("*").forEach(element => {
+            element.classList.add("dark")
+        })
+    }
+    else if (setting === "off") {
+        root.classList.remove("dark");
+
+        body.querySelectorAll("*").forEach(element => {
+            element.classList.remove("dark")
+        })
+    }
 }
 
 darkModeButton.addEventListener("click", () => {
     isDark = !isDark;
     localStorage.setItem(darkModeKey, String(isDark));
 
-    toggleDarkMode();
+    setDarkMode(isDark ? "on" : "off");
 })
 
 if (isDark === true) {
-    toggleDarkMode();
+    setDarkMode("on");
 }
