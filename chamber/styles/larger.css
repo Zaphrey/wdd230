@@ -1,3 +1,9 @@
+:root {
+    --max-width: 1500px;
+    --max-width-extended: 1750px;
+    --border-radius-extended: 10px;
+}
+
 @media screen and (min-width:1000px) {
     /* Landing */
 
@@ -17,20 +23,68 @@
         font-size: xx-large;
     }
 
+    #landing-info {
+        position: relative;
+        top: -1em;
+        max-width: var(--max-width);
+        margin: auto;
+    }
+
+    #landing-info img {
+        border-bottom-left-radius: var(--border-radius-extended);
+        border-bottom-right-radius: var(--border-radius-extended);
+    }
+
+    nav,
+    header {
+        margin: auto;
+        padding: 0px 50px 0px 50px;
+        max-width: var(--max-width-extended);
+    }
+
+    nav {
+        padding: 0px 50px 0px 50px;
+        background-color: var(--secondary-color);
+        border-bottom-left-radius: var(--border-radius-extended);
+        border-bottom-right-radius: var(--border-radius-extended);
+    }
+
+    footer {
+        padding-left: 50px;
+        padding-right: 50px;
+        max-width: var(--max-width-extended);
+        margin: auto;
+        border-top-left-radius: var(--border-radius-extended);
+        border-top-right-radius: var(--border-radius-extended);
+    }
+
+    #spotlight-members-section {
+        border-radius: var(--border-radius-extended);
+        max-width: var(--max-width);
+        margin: auto;
+    }
+
     /* Events */
 
     #event-card-container {
         display: flex;
         flex-direction: row;
+        justify-content: center;
     }
 
     .event-card {
         flex: auto;
-        margin: 50px;
+        margin: 4em 1em;
+        max-width: 400px;
     }
 
     .event-card img {
-        max-height: 300px;
+        max-height: 200px;
+    }
+
+    #events-section {
+        max-width: var(--max-width);
+        margin: auto;
     }
 
     /* Members */
@@ -78,9 +132,11 @@
         padding: 10px;
         width: 60vw;
         display: grid;
-        grid-template-columns: 1fr 2fr;
+        grid-template-columns: 1fr 1fr;
         grid-auto-rows: auto;
         gap: 10px;
+        max-width: var(--max-width);
+        margin-bottom: 2em;
     }
 
     #discover-img-container {
@@ -121,12 +177,10 @@
 
     /* Form */
     .wf1 {
-        max-width: 50vw;
+        max-width: 1000px;
         background-color: var(--border-color);
         margin: 2em;
-        padding: 1rem;
         color: var(--background-color);
-        border-radius: 10px;
         min-width: 400px;
     }
 
@@ -134,7 +188,7 @@
         display: grid;
         grid-template-columns: 2fr 1fr;
         grid-template-rows: 1fr;
-        max-width: 60vw;
+        max-width: var(--max-width);
         margin: auto;
     }
 
@@ -149,10 +203,18 @@
         min-width: 350px;
     }
 
+    #directory-card-container {
+        max-width: var(--max-width);
+    }
+
+    #buttons {
+        max-width: 350px;
+    }
+
     #event-card-container,
     #member-card-container,
     #weather-section {
-        max-width: 80vw;
+        max-width: var(--max-width);
         margin: auto;
     }
 }

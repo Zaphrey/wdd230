@@ -34,7 +34,7 @@
             "email": "",
             "url": "https://www.masmacon.org/",
             "icon": "https://zaphrey.github.io/wdd230/chamber/images/mas-logo.webp",
-            "membership": "Non Profit"
+            "membership": "Gold"
         },
         {
             "name": "Washington Memorial Library",
@@ -61,7 +61,7 @@
             "email": "",
             "url": "https://www.creativealternative.art/",
             "icon": "https://zaphrey.github.io/wdd230/chamber/images/tca-logo.webp",
-            "membership": "Non Profit"
+            "membership": "Silver"
         }
     ]
 }

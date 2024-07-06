@@ -10,7 +10,7 @@
     --complementary-color: #F2AF29;
     --complementary-color-other: #dc9b1a;
     --complementary-color-shadow: #ab7f27;
-    --legend-border-color: #2a414e;
+    --legend-border-color: #1e2f39;
     --required-accent-color: #FFDF9E;
     --valid-color: #C6DBC2;
     --invalid-color: #FFCCCC;
@@ -42,32 +42,29 @@ body {
     width: 100vw;
 }
 
-header {
-    z-index: 2;
-    position: sticky;
-    top: 0;
-    background: linear-gradient(var(--primary-color), var(--secondary-color));
-}
-
 nav {
     z-index: 2;
     position: sticky;
     top: 75px;
     text-align: center;
-    height: auto;
+    height: 50px;
 }
 
 header {
+    z-index: 2;
+    position: sticky;
+    top: 0;
+    background: linear-gradient(var(--primary-color), var(--secondary-color));
     height: 75px;
     display: grid;
     grid-template-columns: auto 1fr 100px 75px;
-    color: var(--background-color);
 }
 
 header p {
     grid-column: 2/3;
     text-align: center;
     padding: 5px;
+    color: var(--background-color);
 }
 
 header div {
@@ -84,11 +81,15 @@ nav {
     background-color: var(--primary-color);
 }
 
+nav a.selected {
+    background: var(--border-color);
+}
+
 nav a {
     display: block;
     color: var(--background-color);
     border-top: solid 1px var(--border-color);
-    background-color: var(--secondary-color);
+    background-color: var(--primary-color);
     padding: 15px;
 }
 
@@ -125,6 +126,7 @@ nav a:hover {
     border-radius: var(--border-radius);
     border: none;
     padding: 5px;
+    min-height: 44px;
 }
 
 #site-icon {
@@ -186,6 +188,8 @@ img {
     padding: 5%;
     margin: auto 10%;
     height: auto;
+    border-radius: var(--border-radius);
+    border: 2px solid var(--text-color);
 }
 
 #landing-text p {
@@ -285,12 +289,20 @@ a {
     width: 100%;
     max-width: 100%;
     max-height: 40vw;
+    border: 2px inset var(--border-color);
+    min-height: 200px;
+}
+
+.event-card a {
+    color: var(--background-color);
+    text-decoration: underline;
 }
 
 /* Spotlight Members Section */
 
 #spotlight-members-section {
     background-color: var(--secondary-color);
+    border: 2px solid var(--border-color);
 }
 
 #spotlight-members-section h2 {
@@ -301,6 +313,8 @@ a {
     display: grid;
     grid-template-columns: 1fr 1fr;
     padding-bottom: 30px;
+    display: flex;
+    flex-direction: column;
 }
 
 .member-card,
@@ -516,7 +530,7 @@ body {
 }
 
 #discover-side-1>div {
-    padding: 1%;
+    padding: 1em;
 }
 
 #event-header {
@@ -555,7 +569,7 @@ body {
 h1#membership {
     text-align: center;
     margin: auto;
-    padding-top: 1em;
+    padding-top: 2em;
 }
 
 #form-grid {
@@ -564,10 +578,9 @@ h1#membership {
 
 .wf1 {
     background-color: var(--border-color);
-    margin: 2em;
-    padding: 1rem;
     color: var(--background-color);
-    border-radius: 10px;
+    border-radius: var(--border-radius);
+    border: 2px solid var(--border-color);
     min-width: 300px;
 }
 
@@ -575,7 +588,7 @@ h1#membership {
     background-color: var(--primary-color);
     padding: 1rem;
     margin: 1rem;
-    border-radius: 6px;
+    border-radius: var(--border-radius);
     border: 2px solid var(--background-color);
 }
 
@@ -583,7 +596,7 @@ h1#membership {
     padding: .5rem;
     background-color: var(--secondary-color);
     box-shadow: 5px 5px 5px var(--legend-border-color);
-    border-radius: 6px;
+    border-radius: var(--border-radius);
     border: 2px solid var(--legend-border-color);
 }
 
@@ -601,16 +614,16 @@ h1#membership {
     display: block;
     width: 50%;
     max-width: 300px;
-    border-radius: 6px;
+    border-radius: var(--border-radius);
     min-width: 200px;
 }
 
 .wf1 input:required {
-    border-left: 8px solid var(--invalid-color);
+    background-color: var(--invalid-color);
 }
 
 .wf1 input:required:valid {
-    border-left: 8px solid var(--valid-color);
+    background-color: var(--valid-color);
 }
 
 .wf1 input[type="radio"] {
@@ -635,7 +648,7 @@ h1#membership {
     width: 97%;
     padding: 1%;
     margin: 0px;
-    border-radius: 6px;
+    border-radius: var(--border-radius);
 }
 
 .wf1 h2 {
@@ -658,25 +671,26 @@ h1#membership {
 }
 
 #form-grid>div {
+    border: 2px solid var(--border-color);
     background-color: var(--border-color);
     margin: 2em 2em;
-    border-radius: 10px;
+    border-radius: var(--border-radius);
     display: flex;
     flex-direction: column;
 }
 
 .description-card h2,
-p {
+.description-card p {
     padding: 0px;
     color: var(--background-color);
 }
 
 .description-card {
-    margin: 2em;
+    margin: 1em;
     padding: 1em;
     flex-grow: 1;
     background-color: var(--primary-color);
-    border-radius: 6px;
+    border-radius: var(--border-radius);
     border: 2px solid var(--background-color);
 }
 
@@ -874,8 +888,12 @@ main.dark {
 }
 
 nav a.dark {
-    background-color: var(--secondary-color);
+    background-color: var(--primary-color);
     color: var(--text-color);
+}
+
+nav a.selected.dark {
+    background: var(--border-color);
 }
 
 nav a.dark:hover {
@@ -933,7 +951,7 @@ header p.dark {
 }
 
 #weather-section.dark {
-    padding-bottom: 20px;
+    padding-bottom: 3em;
 }
 
 #weather-section h2.dark {
@@ -942,8 +960,6 @@ header p.dark {
 
 footer.dark {
     background-color: var(--footer-color);
-    margin: 0px;
-    padding: 40px 20px 20px;
 }
 
 footer p.dark {
