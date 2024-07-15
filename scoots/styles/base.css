@@ -1,0 +1,239 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+HR:wght@100..400&display=swap');
+
+:root {
+    --base-font: "JetBrains Mono", sans-serif;
+    --fancy-font: "Playwrite HR";
+    --text-color: rgb(0, 0, 0);
+    --link-color: rgb(255, 255, 255);
+    --primary-color: rgb(209, 103, 121);
+    --primary-color-shadow: rgb(175, 82, 98);
+    --primary-color-hover: rgb(141, 60, 73);
+    --primary-color-border: rgb(84, 43, 49);
+    --background-color: rgb(231, 231, 231);
+    --background-color-shadow: rgb(189, 189, 189);
+    --button-color: rgb(68, 95, 168);
+    --button-color-hover: rgb(47, 63, 104);
+    --border-radius: 2px;
+    --background-gradient: linear-gradient(to bottom right, var(--primary-color), var(--button-color))
+}
+
+body {
+    font-family: var(--base-font);
+    padding: 0px;
+    margin: 0px;
+    background-image: var(--background-gradient);
+}
+
+nav {
+    top: 0px;
+    position: sticky;
+    background-color: var(--primary-color);
+    font-style: italic;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 2;
+    overflow: hidden;
+}
+
+a {
+    color: var(--link-color);
+    font-size: 1em;
+    text-align: left;
+    padding: 20px 1em 20px 3em;
+    width: 100%;
+    white-space: nowrap;
+    flex: 0;
+    transition: padding 0.5s;
+}
+
+nav a:first-child {
+    text-decoration: none;
+    padding: 0px;
+}
+
+nav a:hover {
+    background-color: var(--primary-color-hover);
+}
+
+nav a:nth-child(even) {
+    background-color: var(--primary-color-shadow);
+}
+
+nav a:nth-child(even):hover {
+    background-color: var(--primary-color-hover);
+}
+
+
+/* nav a:nth-child(even) {
+    background-color: var(--primary-color-shadow);
+} */
+
+#scoots-logo {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    font-family: var(--fancy-font);
+    font-size: 2em;
+}
+
+#scoots-logo img {
+    height: 1.5em;
+    width: auto;
+}
+
+.icon {
+    filter: brightness(200%);
+}
+
+#heat-advisory {
+    margin: 3em;
+    padding: 0px;
+    background-color: var(--background-color);
+}
+
+#heat-advisory div:nth-child(1) {
+    display: grid;
+    position: relative;
+    height: 2em;
+    padding: 0.5em;
+    background-color: var(--background-color-shadow);
+}
+
+#heat-advisory div h2 {
+    grid-row: 1/2;
+    padding: 0px;
+    margin: 0px;
+}
+
+#heat-advisory div button {
+    position: absolute;
+    top: 0px;
+    right: 0.5em;
+    grid-row: 1/2;
+}
+
+#heat-advisory div button img {
+    filter: brightness(0%);
+}
+
+#heat-advisory div:nth-child(2) {
+    padding: 2em;
+}
+
+header {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+}
+
+#hero-image {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    grid-area: 1/1/2/2;
+}
+
+#hero-description {
+    grid-area: 1/1/2/2;
+    width: 80vw;
+    max-width: 500px;
+    padding: 1em;
+    text-align: left;
+}
+
+.card {
+    text-align: center;
+    margin: auto;
+    padding: 0px 1em;
+    background-color: var(--background-color);
+}
+
+.button {
+    background-color: var(--button-color);
+    padding: 1em;
+    display: block;
+    max-width: 200px;
+    margin: 1em auto;
+    text-align: center;
+    transition: background-color 0.25s;
+}
+
+.button:hover {
+    background-color: var(--button-color-hover);
+}
+
+section.card {
+    padding: 1em;
+    margin: 1em 0px;
+}
+
+.contact-list li {
+    text-align: left;
+    padding: 0.5em;
+}
+
+.social-links {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.social-links a {
+    padding: 0px;
+}
+
+.social-links img {
+    height: 3em;
+    width: auto;
+    padding: 1em;
+    flex: 1;
+}
+
+#attribution-link {
+    color: var(--text-color);
+    text-align: left;
+    padding: 1em 0px;
+}
+
+footer {
+    padding: 1em;
+    display: grid;
+    grid-template-columns: 1fr 4em;
+    grid-template-rows: 1fr;
+    background-color: var(--background-color);
+}
+
+footer ul.contact-list {
+    font-size: 16px;
+    margin: auto 0px;
+}
+
+footer div.social-links {
+    grid-area: 1/2/2/3;
+    flex-direction: column;
+}
+
+footer div.social-links img {
+    height: 2em;
+    width: auto;
+    padding: 0.5em;
+}
+
+table {
+    background-color: var(--background-color);
+}
+
+th {
+    border: 2px solid var(--primary-color-border);
+}
+
+tr:nth-child(even) {
+    background-color: var(--background-color-shadow);
+}
+
+tr:nth-child(odd) {
+    background-color: var(--background-color);
+}

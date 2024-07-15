@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scoots - Home</title>
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/large.css">
+</head>
+
+<body>
+    <nav>
+        <div id="logo-nav-container">
+            <a href="#">
+                <div id="scoots-logo"><span>Scoots</span><img class="icon"
+                        src="images/scooter_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg" alt="Scoots">
+                </div>
+            </a>
+        </div>
+        <a href="index.html">Home</a>
+        <a href="#">Rentals</a>
+        <a href="reservations.html">Reservations</a>
+        <a href="contact.html">Contact Us</a>
+    </nav>
+    <main>
+        <table id="rental-table">
+            <caption>Max Rental Prices</caption>
+            <thead>
+                <tr>
+                    <td colspan="2"></td>
+                    <th colspan="2" scope="col">Reservation</th>
+                    <th colspan="2" scope="col">Walk-In</th>
+                </tr>
+                <tr>
+                    <th scope="col">Vehicle Type</th>
+                    <th scope="col">Max People</th>
+                    <th scope="col">Half Day</th>
+                    <th scope="col">Full Day</th>
+                    <th scope="col">Half Day</th>
+                    <th scope="col">Full Day</th>
+                </tr>
+            </thead>
+        </table>
+    </main>
+    <footer>
+        <ul class="contact-list">
+            <li>Email: support.cozumel@scoots.com</li>
+            <li>Phone: +52 (987) 113-9491</li>
+            <li>Whatsapp: +52 (987) 113-9491</li>
+            <li><a id="attribution-link" href="attributions.html">Attributions</a></li>
+        </ul>
+        <div class="social-links">
+            <a href="https://www.facebook.com"><img src="images/facebook_logo.svg" alt=""></a>
+            <a href="https://www.instagram.com"><img src="images/instagram_logo.svg" alt=""></a>
+            <a href="https://www.twitter.com"><img src="images/twitter_logo.svg" alt=""></a>
+            <a href="https://www.youtube.com"><img src="images/youtube_logo.svg" alt=""></a>
+        </div>
+    </footer>
+
+    <script src="scripts/populateRentals.js"></script>
+</body>
+
+</html>

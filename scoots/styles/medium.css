@@ -1,0 +1,26 @@
+@media screen and (min-width: 650px) {
+    nav {
+        flex-direction: row;
+        padding: 0 2em 0 2em;
+    }
+
+    nav a:first {
+        padding: 0px 2em;
+    }
+
+    nav>a,
+    nav>a:nth-child(even) {
+        border-left: var(--border-radius) solid var(--primary-color-shadow);
+        text-align: center;
+        padding: 20px 1em;
+        background-color: var(--primary-color);
+    }
+
+    nav>a:last-child {
+        border-right: var(--border-radius) solid var(--primary-color-shadow);
+    }
+
+    #logo-nav-container {
+        margin: 0em 1em 0em -1em
+    }
+}

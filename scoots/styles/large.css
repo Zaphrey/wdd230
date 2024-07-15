@@ -1,0 +1,7 @@
+@media screen and (min-width: 1000px) {
+
+    nav a,
+    nav a:nth-child(even) {
+        padding: 20px 3em;
+    }
+}

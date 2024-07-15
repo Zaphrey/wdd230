@@ -1,0 +1,14 @@
+Logo will use an icon from the icon section from Google Fonts.
+Font for Scoots logo is "Magneto" Bold, 30pt.
+Default font will be Jetbrains mono until a better alternative is found.
+
+Header image is from https://www.pexels.com/photo/dock-under-purple-sky-2439004/
+
+Image sources:
+
+Jeep Wrangler 2 door: https://www.autoevolution.com/jeep/wrangler/
+Jeep Wrangler 4 door: https://www.autoevolution.com/jeep/wrangler/
+Honda Pioneer ATV: https://www.atv.com/manufacturer/honda/hog-hunting-adventure-with-the-honda-pioneer-1000-5-le
+Honda PCX150 Scooter: https://powersports.honda.com/motorcycle/scooter/pcx
+Honda Dio Scooter: https://www.hondamotorbikes.co.nz/scooters/dio-nsc110
+Honda Metropolitan: https://www.crossroadpowersports.com/New-Inventory-2024-Honda-Motorcycle-Scooter-Metropolitan-Crossroad-Powersports-14275986
