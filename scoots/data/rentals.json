@@ -11,7 +11,7 @@
                 "halfDay": "$25",
                 "fullDay": "$35"
             },
-            "url": "https://zaphrey.github.io/wdd230/scoots/honda-metro.webp"
+            "url": "https://zaphrey.github.io/wdd230/scoots/images/honda-metro.webp"
         },
         {
             "type": "Honda Dio Scooter",
@@ -24,7 +24,7 @@
                 "halfDay": "$35",
                 "fullDay": "$45"
             },
-            "url": "https://zaphrey.github.io/wdd230/scoots/honda-dio.webp"
+            "url": "https://zaphrey.github.io/wdd230/scoots/images/honda-dio.webp"
         },
         {
             "type": "Honda PCX150 Scooter",
@@ -37,7 +37,7 @@
                 "halfDay": "$45",
                 "fullDay": "$55"
             },
-            "url": "https://zaphrey.github.io/wdd230/scoots/honda-pcx.webp"
+            "url": "https://zaphrey.github.io/wdd230/scoots/images/honda-pcx.webp"
         },
         {
             "type": "Honda Pioneer ATV",
@@ -50,7 +50,7 @@
                 "halfDay": "$60",
                 "fullDay": "$80"
             },
-            "url": "https://zaphrey.github.io/wdd230/scoots/honda-pioneer-atv.webp"
+            "url": "https://zaphrey.github.io/wdd230/scoots/images/honda-pioneer-atv.webp"
         },
         {
             "type": "Jeep Wrangler - 4 door with a/c",
@@ -63,7 +63,7 @@
                 "halfDay": "$85",
                 "fullDay": "$125"
             },
-            "url": "https://zaphrey.github.io/wdd230/scoots/jeep-wrangler-4-door.webp"
+            "url": "https://zaphrey.github.io/wdd230/scoots/images/jeep-wrangler-4-door.webp"
         },
         {
             "type": "Jeep Wrangler - 2 door",
@@ -76,7 +76,7 @@
                 "halfDay": "$70",
                 "fullDay": "$90"
             },
-            "url": "https://zaphrey.github.io/wdd230/scoots/jeep-wrangler-2-door.webp"
+            "url": "https://zaphrey.github.io/wdd230/scoots/images/jeep-wrangler-2-door.webp"
         }
     ]
 }

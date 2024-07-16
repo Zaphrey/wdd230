@@ -1,5 +1,5 @@
 const rentalTable = document.querySelector("#rental-table");
-let url = "data/rentals.json"
+const url = "https://zaphrey.github.io/wdd230/scoots/data/rentals.json";
 
 async function fetchData(url) {
     let request = await fetch(url);
@@ -26,7 +26,7 @@ function createRentalCell(content, row) {
 function buildTableRow(obj) {
     let row = document.createElement("tr");
     let type = createRentalCell(obj.type, row);
-    let max = createRentalCell(obj.max, row);
+    let max = createRentalCell(obj.maxPersons, row);
     let resHalf = createRentalCell(obj.reservation.halfDay, row);
     let resFull = createRentalCell(obj.reservation.fullDay, row);
     let walkHalf = createRentalCell(obj.walkIn.halfDay, row);

@@ -24,7 +24,45 @@
         <a href="#">Reservations</a>
         <a href="contact.html">Contact Us</a>
     </nav>
-
+    <main>
+        <h1>Reservations</h1>
+        <div id="rental-gallery">
+            <button id="next"></button>
+            <button id="prev"></button>
+        </div>
+        <div id="rental-and-agreement">
+            <ul>
+                <h2>Reservation Agreements</h2>
+                <li>A $50 security deposit is required to confirm reservations.</li>
+                <li>A valid drivers license is required in hand at the time of rental.</li>
+                <li>No one under the age of 12 years of age are allowed to ride on the scooters.</li>
+                <li>Fuel charge is not included.</li>
+                <li>Unlimited mileage.</li>
+                <li>Liability insurance is included.</li>
+                <li>Damage insurance is available for purchase.</li>
+                <li>Free delivery to Cozumel hotels or Airbnbs for 2+ day rentals.</li>
+                <li>Payment via Google Pay, Apple Pay, cash, credit card, debit card, or venmo.</li>
+                <li>Rentals may be returned to either physical location.</li>
+            </ul>
+            <form action="thankyou.html" method="get" class="form">
+                <fieldset>
+                    <legend>Reservation Form</legend>
+                    <label>Name<input type="text" name="fname" id="fname" required></label>
+                    <label>Email<input type="email" name="email" id="email" required></label>
+                    <label>Phone Number<input type="tel" name="phone" id="phone" required></label>
+                    <label>Rental Type<input type="text" name="type" id="type" required></label>
+                    <label>Rental Date<input type="date" name="rental-date" id="rental-date" required></label>
+                    <label>Rental Period<input type="date" required></label>
+                </fieldset>
+                <fieldset>
+                    <legend>Drop-off Request</legend>
+                    <label>Request Drop-off<input type="checkbox" name="drop-request" id="drop-request"></label>
+                    <label>Drop-off Location<input type="text" name="drop-location" id="drop-location"></label>
+                </fieldset>
+                <input type="submit" value="Submit My Reservation" id="submit-reservation">
+            </form>
+        </div>
+    </main>
     <footer>
         <ul class="contact-list">
             <li>Email: support.cozumel@scoots.com</li>
@@ -39,6 +77,7 @@
             <a href="https://www.youtube.com"><img src="images/youtube_logo.svg" alt=""></a>
         </div>
     </footer>
+    <script src="scripts/populateRentalGallery.js"></script>
 </body>
 
 </html>
