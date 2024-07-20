@@ -18,27 +18,64 @@
                         src="images/scooter_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg" alt="Scoots">
                 </div>
             </a>
+            <button id="menu-button">
+                <img src="images/menu_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg" alt="">
+            </button>
         </div>
         <a href="index.html">Home</a>
         <a href="rentals.html">Rentals</a>
         <a href="reservations.html">Reservations</a>
-        <a href="#">Contact Us</a>
+        <a href="#" id="active">Contact Us</a>
     </nav>
 
+    <main>
+        <h1>Contact</h1>
+        <div id="contact-grid">
+            <div id="contact-info" class="card">
+                <p>Find us around at our primary location at the Playa del Carmen-Cozumel Ferry dock, or our sister
+                    location
+                    at the Terminal Puerta Maya further south along the coast. Our office hours are 7:00am-8:00pm and
+                    our
+                    phone number is +52 (987) 113-9491. Click <a class="inline-link button"
+                        href="reservations.html">here</a> for
+                    reservations.</p>
+            </div>
+            <div id="maps" class="card">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1424.5632977657867!2d-86.9491898785445!3d20.511448991253744!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f4e59cebcc44c25%3A0x116ec79ef00cd461!2sHTL%20RENTALS%20scooter%20Buggy%20%26%20jeeps%20rentals!5e0!3m2!1sen!2sus!4v1721319175156!5m2!1sen!2sus"
+                    width="400" height="400" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1141.7782135191137!2d-86.97425721554515!3d20.47664716963431!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f4e577c713cfde5%3A0xd4430e7235baad49!2sFiesta%20Car%20Rental%20Puerta%20Maya!5e0!3m2!1sen!2sus!4v1721319129849!5m2!1sen!2sus"
+                    width="400" height="400" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <form action="thankyou.html" method="get" class="form">
+                <fieldset>
+                    <legend>Contact Form</legend>
+                    <label>First Name<input type="text" name="fname" id="fname" required></label>
+                    <label>Last Name<input type="text" name="lname" id="lname" required></label>
+                    <label>Email Address<input type="email" name="email" id="email" required></label>
+                    <label>Message<textarea placeholder="My message here..." name="message" id="message" cols="30"
+                            rows="10" spellcheck="true" required></textarea></label>
+                </fieldset>
+                <input type="submit" value="Send My Message!" class="button" id="submit-message">
+            </form>
+        </div>
+    </main>
     <footer>
-        <ul class=" contact-list">
-            <li>Email: support.cozumel@scoots.com</li>
-            <li>Phone: +52 (987) 113-9491</li>
-            <li>Whatsapp: +52 (987) 113-9491</li>
+        <ul class="contact-list">
+            <li>Support: support.cozumel@scoots.com</li>
             <li><a id="attribution-link" href="attributions.html">Attributions</a></li>
         </ul>
         <div class="social-links">
-            <a href="https://www.facebook.com"><img src="images/facebook_logo.svg" alt=""></a>
-            <a href="https://www.instagram.com"><img src="images/instagram_logo.svg" alt=""></a>
-            <a href="https://www.twitter.com"><img src="images/twitter_logo.svg" alt=""></a>
-            <a href="https://www.youtube.com"><img src="images/youtube_logo.svg" alt=""></a>
+            <a href="https://www.facebook.com"><img src="images/facebook_logo.svg" alt="facebook logo"></a>
+            <a href="https://www.instagram.com"><img src="images/instagram_logo.svg" alt="instagram logo"></a>
+            <a href="https://www.twitter.com"><img src="images/twitter_logo.svg" alt="twitter logo"></a>
+            <a href="https://www.youtube.com"><img src="images/youtube_logo.svg" alt="youtube logo"></a>
         </div>
     </footer>
+    <script src="scripts/menu.js"></script>
 </body>
 
 </html>

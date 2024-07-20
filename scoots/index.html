@@ -18,82 +18,90 @@
                         src="images/scooter_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg" alt="Scoots">
                 </div>
             </a>
+            <button id="menu-button">
+                <img src="images/menu_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg" alt="">
+            </button>
         </div>
-        <a href="#">Home</a>
+        <a href="#" id="active">Home</a>
         <a href="rentals.html">Rentals</a>
         <a href="reservations.html">Reservations</a>
         <a href="contact.html">Contact Us</a>
     </nav>
-    <section id="heat-advisory" class="card">
-        <div>
-            <h2>Heat Advisory</h2>
-            <button>
+    <div id="advisory-container">
+        <div id="heat-advisory" class="card">
+            <p>Today's high temperature is <span id="alert-temp">50</span>&deg;F. <span id="alert-description">Make sure
+                    to drink
+                    lots of water!</span>
+            </p>
+            <button id="alert-button">
                 <img class="icon" src="images/close_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg" alt="">
             </button>
         </div>
-        <div>
-            BLAHBLAH BLAH Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odit odio voluptates excepturi?
-        </div>
-    </section>
+    </div>
     <header>
         <img id="hero-image" src="images/pexels-nadine-biezmienova-591436-2439004.webp" width="1000" height="250"
             alt="">
         <div id="hero-description" class="card">
-            BLAHBLAH BLAH Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odit odio voluptates excepturi?
+            Welcome! Here at scoots we strive to provide exellent services towards those looking to explore the island
+            of Cozumel.
             <a class="button" href="reservations.html">Book My Reservation</a>
         </div>
     </header>
     <main>
-        <section id="summary" class="card">
-            <h2>Rental Summary</h2>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi, quam?
-            <a class="button" href="rentals.html">Check Out Our Prices</a>
-        </section>
-        <section id="contact" class="card">
-            <h2>Contact Information</h2>
-            <p>Find us around at our primary location at the Playa del Carmen-Cozumel Ferry dock, or our sister location
-                at the Terminal Puerta Maya further south along the coast.</p>
-            <ul class="contact-list">
-                <li>Email: support.cozumel@scoots.com</li>
-                <li>Phone: +52 (987) 113-9491</li>
-                <li>Whatsapp: +52 (987) 113-9491</li>
-            </ul>
-            <div class="social-links">
-                <a href="https://www.facebook.com"><img src="images/facebook_logo.svg" alt=""></a>
-                <a href="https://www.instagram.com"><img src="images/instagram_logo.svg" alt=""></a>
-                <a href="https://www.twitter.com"><img src="images/twitter_logo.svg" alt=""></a>
-                <a href="https://www.youtube.com"><img src="images/youtube_logo.svg" alt=""></a>
-            </div>
-        </section>
-        <section id="weather" class="card">
-            <h2>Today's Weather</h2>
-            <div id="weather-info">
-                <div>Humidity: <span id="humidity">37%</span></div>
-                <div>Temperature: <span id="temperature">97&deg;F</span></div>
-            </div>
-            <div id="weather-desc">
-                <div><span><img src="images/close_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg" alt=""></span>Sunny</div>
-                <div><span><img src="images/close_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg" alt=""></span>Partly
-                    Cloudy
+        <div id="main-cards">
+            <section id="weather" class="card">
+                <h2>Today's Weather</h2>
+                <div id="weather-data">
+                    <div id="weather-info">
+                        <div>Humidity: <span id="humidity"></span>%</div>
+                        <div>Temperature: <span id="temperature"></span>&deg;F</div>
+                    </div>
+                    <div id="weather-desc">
+                    </div>
                 </div>
-            </div>
-            <div>Tomorrows temperature @ 15:00: <span id="next-temp">96&deg;F</span></div>
-        </section>
+                <div>Tomorrows temperature @ 15:00: <span id="next-temp">96</span>&deg;F</div>
+            </section>
+            <section id="summary" class="card">
+                <h2>Rental Summary</h2>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi, quam?
+                <a class="button" href="rentals.html">Check Out Our Prices</a>
+            </section>
+            <section id="contact" class="card">
+                <section>
+                    <h2>Contact Information</h2>
+                    <p>Find us around at our primary location at the Playa del Carmen-Cozumel Ferry dock, or our sister
+                        location
+                        at the Terminal Puerta Maya further south along the coast. Click <a class="inline-link button"
+                            href="contact.html">here</a> for more information.</p>
+                </section>
+                <ul class="contact-list">
+                    <li>Email: support.cozumel@scoots.com</li>
+                    <li>Phone: +52 (987) 113-9491</li>
+                </ul>
+                <div class="social-links">
+                    <a href="https://www.facebook.com"><img src="images/facebook_logo.svg" alt="facebook logo"></a>
+                    <a href="https://www.instagram.com"><img src="images/instagram_logo.svg" alt="instagram logo"></a>
+                    <a href="https://www.twitter.com"><img src="images/twitter_logo.svg" alt="twitter logo"></a>
+                    <a href="https://www.youtube.com"><img src="images/youtube_logo.svg" alt="youtube logo"></a>
+                </div>
+            </section>
+        </div>
     </main>
     <footer>
         <ul class="contact-list">
-            <li>Email: support.cozumel@scoots.com</li>
-            <li>Phone: +52 (987) 113-9491</li>
-            <li>Whatsapp: +52 (987) 113-9491</li>
+            <li>Support: support.cozumel@scoots.com</li>
             <li><a id="attribution-link" href="attributions.html">Attributions</a></li>
         </ul>
         <div class="social-links">
-            <a href="https://www.facebook.com"><img src="images/facebook_logo.svg" alt=""></a>
-            <a href="https://www.instagram.com"><img src="images/instagram_logo.svg" alt=""></a>
-            <a href="https://www.twitter.com"><img src="images/twitter_logo.svg" alt=""></a>
-            <a href="https://www.youtube.com"><img src="images/youtube_logo.svg" alt=""></a>
+            <a href="https://www.facebook.com"><img src="images/facebook_logo.svg" alt="facebook logo"></a>
+            <a href="https://www.instagram.com"><img src="images/instagram_logo.svg" alt="instagram logo"></a>
+            <a href="https://www.twitter.com"><img src="images/twitter_logo.svg" alt="twitter logo"></a>
+            <a href="https://www.youtube.com"><img src="images/youtube_logo.svg" alt="youtube logo"></a>
         </div>
     </footer>
+    <script src="scripts/menu.js"></script>
+    <script src="scripts/weather.js"></script>
+    <script src="scripts/alert.js"></script>
 </body>
 
 </html>

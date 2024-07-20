@@ -1,26 +1,97 @@
 @media screen and (min-width: 650px) {
+    #heat-advisory {
+        margin: 1em;
+    }
+
     nav {
         flex-direction: row;
-        padding: 0 2em 0 2em;
     }
 
     nav a:first {
         padding: 0px 2em;
     }
 
-    nav>a,
-    nav>a:nth-child(even) {
-        border-left: var(--border-radius) solid var(--primary-color-shadow);
+    nav>a {
         text-align: center;
         padding: 20px 1em;
         background-color: var(--primary-color);
-    }
-
-    nav>a:last-child {
-        border-right: var(--border-radius) solid var(--primary-color-shadow);
+        border: none;
     }
 
     #logo-nav-container {
-        margin: 0em 1em 0em -1em
+        margin: 0em 1em;
+        padding: 0;
+    }
+
+    .hidden {
+        display: block;
+    }
+
+    #scoots-logo {
+        flex: none;
+    }
+
+    #logo-nav-container button {
+        display: none;
+    }
+
+    #main-cards {
+        display: grid;
+        grid-auto-rows: auto;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+
+    #main-cards .card {
+        margin: 1em;
+        padding: 1em;
+    }
+
+    .card {
+        font-size: large;
+    }
+
+    #weather {
+        grid-area: 1 / 1 / 1 / 3;
+    }
+
+    #summary {
+        grid-area: 1 / 3 / 1 / 5;
+    }
+
+    #contact {
+        grid-area: 2 / 1 / 2 / 5;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        align-items: end;
+    }
+
+    #contact>section {
+        align-self: self-start;
+        grid-area: 1 / 1 / 2 / 3;
+    }
+
+    #contact>ul {
+        grid-area: 2 / 1 / 3 / 2;
+    }
+
+    #contact>div {
+        grid-area: 2 / 2 / 3 / 3;
+        width: 100%;
+        justify-content: end;
+
+    }
+
+    #contact div.social-links img {
+        padding: 0.5em;
+    }
+
+    #rental-contents {
+        margin: auto;
+        max-width: 800px;
+    }
+
+    h1 {
+        width: 10em;
     }
 }

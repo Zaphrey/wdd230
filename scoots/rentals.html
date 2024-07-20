@@ -18,48 +18,63 @@
                         src="images/scooter_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg" alt="Scoots">
                 </div>
             </a>
+            <button id="menu-button">
+                <img src="images/menu_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg" alt="">
+            </button>
         </div>
         <a href="index.html">Home</a>
-        <a href="#">Rentals</a>
+        <a href="#" id="active">Rentals</a>
         <a href="reservations.html">Reservations</a>
         <a href="contact.html">Contact Us</a>
     </nav>
     <main>
-        <table id="rental-table">
-            <caption>Max Rental Prices</caption>
-            <thead>
-                <tr>
-                    <td colspan="2"></td>
-                    <th colspan="2" scope="col">Reservation</th>
-                    <th colspan="2" scope="col">Walk-In</th>
-                </tr>
-                <tr>
-                    <th scope="col">Vehicle Type</th>
-                    <th scope="col">Max People</th>
-                    <th scope="col">Half Day</th>
-                    <th scope="col">Full Day</th>
-                    <th scope="col">Half Day</th>
-                    <th scope="col">Full Day</th>
-                </tr>
-            </thead>
-        </table>
+        <h1>Rentals</h1>
+        <div id="rental-contents">
+            <section class="card">
+                <h2>Rental Information</h2>
+                <p>Welcome to the Scoots rental page where we disclose our prices for walk-ins and reservations along
+                    with
+                    half-day and full-day periods. Not happy with our prices? Show us the prices of another rental
+                    agency
+                    and we'll adjust ours with our price match guarantee!</p>
+            </section>
+            <div class="card">
+                <table id="rental-table">
+                    <caption>Max Rental Prices</caption>
+                    <thead>
+                        <tr>
+                            <td colspan="2"></td>
+                            <th colspan="2" scope="col">Reservation</th>
+                            <th colspan="2" scope="col">Walk-In</th>
+                        </tr>
+                        <tr>
+                            <th scope="col">Vehicle Type</th>
+                            <th scope="col">Max People</th>
+                            <th scope="col">Half Day</th>
+                            <th scope="col">Full Day</th>
+                            <th scope="col">Half Day</th>
+                            <th scope="col">Full Day</th>
+                        </tr>
+                    </thead>
+                </table>
+            </div>
+        </div>
     </main>
     <footer>
         <ul class="contact-list">
-            <li>Email: support.cozumel@scoots.com</li>
-            <li>Phone: +52 (987) 113-9491</li>
-            <li>Whatsapp: +52 (987) 113-9491</li>
+            <li>Support: support.cozumel@scoots.com</li>
             <li><a id="attribution-link" href="attributions.html">Attributions</a></li>
         </ul>
         <div class="social-links">
-            <a href="https://www.facebook.com"><img src="images/facebook_logo.svg" alt=""></a>
-            <a href="https://www.instagram.com"><img src="images/instagram_logo.svg" alt=""></a>
-            <a href="https://www.twitter.com"><img src="images/twitter_logo.svg" alt=""></a>
-            <a href="https://www.youtube.com"><img src="images/youtube_logo.svg" alt=""></a>
+            <a href="https://www.facebook.com"><img src="images/facebook_logo.svg" alt="facebook logo"></a>
+            <a href="https://www.instagram.com"><img src="images/instagram_logo.svg" alt="instagram logo"></a>
+            <a href="https://www.twitter.com"><img src="images/twitter_logo.svg" alt="twitter logo"></a>
+            <a href="https://www.youtube.com"><img src="images/youtube_logo.svg" alt="youtube logo"></a>
         </div>
     </footer>
 
     <script src="scripts/populateRentals.js"></script>
+    <script src="scripts/menu.js"></script>
 </body>
 
 </html>

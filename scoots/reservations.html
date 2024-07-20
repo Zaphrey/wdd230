@@ -18,20 +18,23 @@
                         src="images/scooter_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg" alt="Scoots">
                 </div>
             </a>
+            <button id="menu-button">
+                <img src="images/menu_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg" alt="">
+            </button>
         </div>
         <a href="index.html">Home</a>
         <a href="rentals.html">Rentals</a>
-        <a href="#">Reservations</a>
+        <a href="#" id="active">Reservations</a>
         <a href="contact.html">Contact Us</a>
     </nav>
     <main>
         <h1>Reservations</h1>
-        <div id="rental-gallery">
-            <button id="next"></button>
-            <button id="prev"></button>
-        </div>
-        <div id="rental-and-agreement">
-            <ul>
+        <div id="reservation-contents">
+            <div id="rental-gallery" class="card">
+                <button id="next"></button>
+                <button id="prev"></button>
+            </div>
+            <ul class="card">
                 <h2>Reservation Agreements</h2>
                 <li>A $50 security deposit is required to confirm reservations.</li>
                 <li>A valid drivers license is required in hand at the time of rental.</li>
@@ -59,25 +62,24 @@
                     <label>Request Drop-off<input type="checkbox" name="drop-request" id="drop-request"></label>
                     <label>Drop-off Location<input type="text" name="drop-location" id="drop-location"></label>
                 </fieldset>
-                <input type="submit" value="Submit My Reservation" id="submit-reservation">
+                <input type="submit" value="Complete My Reservation" class="button" id="submit-reservation">
             </form>
         </div>
     </main>
     <footer>
         <ul class="contact-list">
-            <li>Email: support.cozumel@scoots.com</li>
-            <li>Phone: +52 (987) 113-9491</li>
-            <li>Whatsapp: +52 (987) 113-9491</li>
+            <li>Support: support.cozumel@scoots.com</li>
             <li><a id="attribution-link" href="attributions.html">Attributions</a></li>
         </ul>
         <div class="social-links">
-            <a href="https://www.facebook.com"><img src="images/facebook_logo.svg" alt=""></a>
-            <a href="https://www.instagram.com"><img src="images/instagram_logo.svg" alt=""></a>
-            <a href="https://www.twitter.com"><img src="images/twitter_logo.svg" alt=""></a>
-            <a href="https://www.youtube.com"><img src="images/youtube_logo.svg" alt=""></a>
+            <a href="https://www.facebook.com"><img src="images/facebook_logo.svg" alt="facebook logo"></a>
+            <a href="https://www.instagram.com"><img src="images/instagram_logo.svg" alt="instagram logo"></a>
+            <a href="https://www.twitter.com"><img src="images/twitter_logo.svg" alt="twitter logo"></a>
+            <a href="https://www.youtube.com"><img src="images/youtube_logo.svg" alt="youtube logo"></a>
         </div>
     </footer>
     <script src="scripts/populateRentalGallery.js"></script>
+    <script src="scripts/menu.js"></script>
 </body>
 
 </html>
