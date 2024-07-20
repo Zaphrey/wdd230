@@ -14,6 +14,11 @@
         content="WDD 230 - Frontend Web Development - Final Project Scoots Website - Zachary Humphreys">
     <meta name="author" content="Zachary William Humphreys">
     <title>Scoots - Reservations</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com/" />
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playwrite+HR:wght@100..400&display=swap">
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/medium.css">
     <link rel="stylesheet" href="styles/large.css">
@@ -42,8 +47,8 @@
         <h1>Reservations</h1>
         <div id="reservation-contents">
             <div id="rental-gallery" class="card">
-                <button id="next"></button>
-                <button id="prev"></button>
+                <button id="next" aria-relevant="next image button"></button>
+                <button id="prev" aria-label="previous image button"></button>
             </div>
             <ul class="card">
                 <h2>Reservation Agreements</h2>
