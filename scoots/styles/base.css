@@ -7,7 +7,8 @@
     --text-color: rgb(0, 0, 0);
     --link-color: rgb(255, 255, 255);
     --primary-color: rgb(209, 103, 121);
-    --primary-color-shadow: #af5262;
+    --primary-color-darker: rgb(186, 91, 107);
+    --primary-color-shadow: #8a3e4b;
     --primary-color-hover: rgb(141, 60, 73);
     --primary-color-border: rgb(84, 43, 49);
     --background-color: rgb(231, 231, 231);
@@ -37,7 +38,7 @@ nav {
     color: #fff;
     top: 0px;
     position: sticky;
-    background-color: var(--primary-color);
+    background-color: var(--primary-color-darker);
     font-style: italic;
     display: flex;
     flex-direction: column;
@@ -64,6 +65,7 @@ a {
 }
 
 nav>a {
+
     border-bottom: var(--border-primary);
 }
 
