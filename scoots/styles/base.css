@@ -71,17 +71,11 @@ nav a:first-child {
     padding: 0px;
 }
 
-nav a:hover {
-    background-color: var(--primary-color-hover);
-}
-
 #active {
     background-color: var(--primary-color-shadow);
 }
 
-#active:hover {
-    background-color: var(--primary-color-border);
-}
+
 
 /* nav a:nth-child(even) {
     background-color: var(--primary-color-shadow);
@@ -219,9 +213,7 @@ header {
     border-radius: var(--border-radius);
 }
 
-.button:hover {
-    background-color: var(--button-color-hover);
-}
+
 
 section.card {
     padding: 1em;
@@ -420,9 +412,6 @@ h1 {
     transition: background-color 0.25s;
 }
 
-#rental-gallery button:hover {
-    background-color: var(--button-color-hover);
-}
 
 input:invalid,
 textarea:invalid {
@@ -481,10 +470,6 @@ textarea:valid {
     grid-row: 1/2;
     transition: background-color 0.25s;
     border: none;
-}
-
-#alert-button:hover {
-    background-color: var(--button-color-hover);
 }
 
 section {

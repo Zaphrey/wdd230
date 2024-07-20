@@ -94,4 +94,24 @@
     h1 {
         width: 10em;
     }
+
+    nav a:hover {
+        background-color: var(--primary-color-hover);
+    }
+
+    #active:hover {
+        background-color: var(--primary-color-border);
+    }
+
+    .button:hover {
+        background-color: var(--button-color-hover);
+    }
+
+    #rental-gallery button:hover {
+        background-color: var(--button-color-hover);
+    }
+
+    #alert-button:hover {
+        background-color: var(--button-color-hover);
+    }
 }
