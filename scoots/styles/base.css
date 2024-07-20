@@ -401,6 +401,7 @@ h1 {
 .slide img {
     max-height: 455px;
     height: 100%;
+    max-width: 70vw;
     margin: auto;
     object-fit: cover;
     text-align: center;
@@ -550,7 +551,7 @@ iframe {
 
 #weather-data {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
     align-items: center;
     text-align: left;
     margin: 1em auto;
