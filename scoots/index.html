@@ -2,8 +2,18 @@
 <html lang="en">
 
 <head>
+    <meta property="og:title" content="Scoots - Home">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://zaphrey.github.io/wdd230/scoots/">
+    <meta property="og:image"
+        content="https://images.pexels.com/photos/2439004/pexels-photo-2439004.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1">
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="WDD 230 - Frontend Web Development - Final Project Scoots Website - Zachary Humphreys">
+    <meta name="author" content="Zachary William Humphreys">
+
     <title>Scoots - Home</title>
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/medium.css">
@@ -15,11 +25,13 @@
         <div id="logo-nav-container">
             <a href="#">
                 <div id="scoots-logo"><span>Scoots</span><img class="icon"
-                        src="images/scooter_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg" alt="Scoots">
+                        src="images/scooter_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg" alt="Scoots" width="40"
+                        height="40">
                 </div>
             </a>
-            <button id="menu-button">
-                <img src="images/menu_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg" alt="">
+            <button id="menu-button" aria-label="menu button">
+                <img src="images/menu_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg" alt="menu button image" width="20"
+                    height="20">
             </button>
         </div>
         <a href="#" id="active">Home</a>
@@ -33,16 +45,21 @@
                     to drink
                     lots of water!</span>
             </p>
-            <button id="alert-button">
-                <img class="icon" src="images/close_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg" alt="">
+            <button id="alert-button" aria-label="alert close button">
+                <img class="icon" src="images/close_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg" width="20" height="20"
+                    alt="">
             </button>
         </div>
     </div>
     <header>
-        <img id="hero-image" src="images/pexels-nadine-biezmienova-591436-2439004.webp" width="1000" height="250"
-            alt="">
+        <picture id="hero-picture">
+            <source media="(max-width: 650)" srcset="images/hero-small.webp">
+            <source media="(max-width: 1000px)" srcset="images/hero-medium.webp">
+            <img id="hero-image" src="images/hero-large.webp" alt="a picture of the island cozumel">
+        </picture>
         <div id="hero-description" class="card">
-            Welcome! Here at scoots we strive to provide exellent services towards those looking to explore the island
+            Welcome! Here at scoots we strive to provide exellent services towards those looking to explore the
+            island
             of Cozumel.
             <a class="button" href="reservations.html">Book My Reservation</a>
         </div>
@@ -71,37 +88,45 @@
                     <h2>Contact Information</h2>
                     <p>Find us around at our primary location at the Playa del Carmen-Cozumel Ferry dock, or our sister
                         location
-                        at the Terminal Puerta Maya further south along the coast. Click <a class="inline-link button"
-                            href="contact.html">here</a> for more information.</p>
+                        at the Terminal Puerta Maya further south along the coast. <a class="inline-link button"
+                            href="contact.html">Click here for more information.</a></p>
                 </section>
                 <ul class="contact-list">
                     <li>Email: support.cozumel@scoots.com</li>
                     <li>Phone: +52 (987) 113-9491</li>
                 </ul>
                 <div class="social-links">
-                    <a href="https://www.facebook.com"><img src="images/facebook_logo.svg" alt="facebook logo"></a>
-                    <a href="https://www.instagram.com"><img src="images/instagram_logo.svg" alt="instagram logo"></a>
-                    <a href="https://www.twitter.com"><img src="images/twitter_logo.svg" alt="twitter logo"></a>
-                    <a href="https://www.youtube.com"><img src="images/youtube_logo.svg" alt="youtube logo"></a>
+                    <a href="https://www.facebook.com"><img src="images/facebook_logo.svg" alt="facebook logo"
+                            width="40" height="40"></a>
+                    <a href="https://www.instagram.com"><img src="images/instagram_logo.svg" alt="instagram logo"
+                            width="40" height="40"></a>
+                    <a href="https://www.twitter.com"><img src="images/twitter_logo.svg" alt="twitter logo width=" 40"
+                            height="40"></a>
+                    <a href="https://www.youtube.com"><img src="images/youtube_logo.svg" alt="youtube logo width=" 40"
+                            height="40""></a>
                 </div>
             </section>
         </div>
     </main>
     <footer>
-        <ul class="contact-list">
-            <li>Support: support.cozumel@scoots.com</li>
-            <li><a id="attribution-link" href="attributions.html">Attributions</a></li>
-        </ul>
-        <div class="social-links">
-            <a href="https://www.facebook.com"><img src="images/facebook_logo.svg" alt="facebook logo"></a>
-            <a href="https://www.instagram.com"><img src="images/instagram_logo.svg" alt="instagram logo"></a>
-            <a href="https://www.twitter.com"><img src="images/twitter_logo.svg" alt="twitter logo"></a>
-            <a href="https://www.youtube.com"><img src="images/youtube_logo.svg" alt="youtube logo"></a>
-        </div>
-    </footer>
-    <script src="scripts/menu.js"></script>
-    <script src="scripts/weather.js"></script>
-    <script src="scripts/alert.js"></script>
+        <ul class=" contact-list">
+                        <li>Support: support.cozumel@scoots.com</li>
+                        <li><a id="attribution-link" href="attributions.html">Attributions</a></li>
+                        </ul>
+                        <div class="social-links">
+                            <a href="https://www.facebook.com"><img src="images/facebook_logo.svg" alt="facebook logo"
+                                    width="40" height="40"></a>
+                            <a href="https://www.instagram.com"><img src="images/instagram_logo.svg"
+                                    alt="instagram logo" width="40" height="40"></a>
+                            <a href="https://www.twitter.com"><img src="images/twitter_logo.svg" alt="twitter logo"
+                                    width="40" height="40"></a>
+                            <a href="https://www.youtube.com"><img src="images/youtube_logo.svg" alt="youtube logo"
+                                    width="40" height="40"></a>
+                        </div>
+                        </footer>
+                        <script src="scripts/menu.js"></script>
+                        <script src="scripts/weather.js"></script>
+                        <script src="scripts/alert.js"></script>
 </body>
 
 </html>
