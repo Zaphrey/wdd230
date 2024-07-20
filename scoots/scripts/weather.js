@@ -60,6 +60,7 @@ function buildWeatherRow(object) {
     img.setAttribute("src", getWeatherIcon(object.icon));
     img.setAttribute("alt", "weather icon");
     img.setAttribute("height", "32");
+    img.setAttribute("width", "32");
 
     let span = document.createElement("span");
     span.textContent = capitalize(object.description);

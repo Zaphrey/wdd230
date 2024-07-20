@@ -34,6 +34,7 @@ body {
 }
 
 nav {
+    color: #fff;
     top: 0px;
     position: sticky;
     background-color: var(--primary-color);
