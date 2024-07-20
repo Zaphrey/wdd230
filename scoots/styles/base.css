@@ -380,14 +380,13 @@ h1 {
 
 #rental-gallery div.slide {
     grid-area: 1 / 1 / 2 / 4;
-    opacity: 0;
-    transition: opacity 0.5s;
+    display: none;
     position: relative;
 }
 
 
 #rental-gallery div.slide.active {
-    opacity: 100%;
+    display: block;
 }
 
 #rental-gallery div.caption {
@@ -404,10 +403,9 @@ h1 {
 
 .slide img {
     max-height: 455px;
-    width: 100%;
-    margin: auto auto auto -2.5px;
+    height: 100%;
+    margin: auto;
     object-fit: cover;
-    display: block;
     text-align: center;
     border: var(--border-1);
     border-radius: var(--border-radius);

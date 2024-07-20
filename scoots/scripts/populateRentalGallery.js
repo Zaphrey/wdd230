@@ -24,8 +24,10 @@ function createSlide(imageUrl, caption) {
 
     let img = document.createElement("img");
     img.setAttribute("src", imageUrl);
-    img.setAttribute("height", "500")
+    img.setAttribute("height", "500");
+    img.setAttribute("width", "500");
     img.setAttribute("alt", `image of ${caption}`);
+    img.setAttribute("loading", "lazy");
 
     let imgCaption = document.createElement("div");
     imgCaption.classList.add("caption");
