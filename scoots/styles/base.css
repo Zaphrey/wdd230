@@ -84,7 +84,8 @@ nav a:first-child {
 
 #logo-nav-container {
     text-align: left;
-    width: minmax(--min-width, 100vw);
+    width: 100vw;
+    min-width: var(--min-width);
     margin: 0.5em;
 }
 
@@ -223,7 +224,8 @@ section.card {
 .contact-list li {
     text-align: left;
     padding: 0.5em;
-    max-width: minmax(--min-width, 100vw);
+    width: 100vw;
+    min-width: var(--min-width);
     text-wrap: pretty;
 }
 
@@ -539,7 +541,8 @@ iframe {
 }
 
 #rental-contents {
-    width: minmax(--min-width, 100vw);
+    width: 100vw;
+    min-width: var(--min-width);
 }
 
 #rental-contents section.card {
@@ -552,7 +555,8 @@ iframe {
 }
 
 #rental-table {
-    max-width: minmax(--min-width, 100vw);
+    max-width: 100vw;
+    min-width: var(--min-width);
 }
 
 #weather {
