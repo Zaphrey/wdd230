@@ -7,6 +7,7 @@
         flex-direction: row;
     }
 
+
     nav a:first {
         padding: 0px 2em;
     }
@@ -14,8 +15,14 @@
     nav>a {
         text-align: center;
         padding: 20px 1em;
-
+        margin: 4px;
         border: none;
+        background-color: var(--primary-color-darker);
+        border-radius: var(--border-radius);
+    }
+
+    nav a:hover {
+        background-color: var(--primary-color-hover);
     }
 
     #logo-nav-container {
@@ -93,10 +100,6 @@
 
     h1 {
         width: 10em;
-    }
-
-    nav a:hover {
-        background-color: var(--primary-color-hover);
     }
 
     #active:hover {
