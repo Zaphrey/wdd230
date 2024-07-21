@@ -68,14 +68,14 @@ function buildWeatherRow(object) {
     container.appendChild(img);
     container.appendChild(span);
     weatherDesc.appendChild(container);
-    console.log(object)
+    //console.log(object)
 }
 
 function displayResults(data) {
     document.querySelector("#alert-temp").textContent = data.main.temp_max.toFixed(0);
     document.querySelector("#humidity").textContent = data.main.humidity;
     document.querySelector("#temperature").textContent = data.main.temp.toFixed(0);
-    console.table(data);
+    //console.table(data);
 
     data.weather.forEach(buildWeatherRow)
 }
