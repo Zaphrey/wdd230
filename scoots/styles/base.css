@@ -145,9 +145,10 @@ nav a:first-child {
     border: var(--border-button);
     padding: 3px 0 0 0;
     position: absolute;
-    top: 1em;
-    right: 1em;
+    top: 0.5em;
+    right: 0.5em;
     z-index: 4;
+    font-size: medium;
 }
 
 #heat-advisory div:nth-child(2) {
@@ -191,7 +192,7 @@ header {
 }
 
 .card {
-    text-align: center;
+    text-align: left;
     margin: auto;
     padding: 0px 1em;
     background-color: var(--background-color);
@@ -308,6 +309,8 @@ footer div.social-links img {
 
 label {
     font-family: var(--base-font);
+    margin-top: 2em;
+    display: block;
 }
 
 .form input,
@@ -320,7 +323,7 @@ label {
     width: 75vw;
     max-width: var(--min-width);
     border: var(--border-1);
-    margin-bottom: 2em;
+    margin-top: 0.5em;
 }
 
 .form input[type="checkbox"] {
@@ -441,12 +444,23 @@ textarea:valid {
 
 #maps iframe {
     width: 100%;
+    padding: 0;
+    border: var(--border-1);
 }
 
 #contact-info {
     background-color: var(--background-color);
     padding: 1em;
     line-height: 2;
+}
+
+#contact section {
+    max-width: 600px;
+    margin: auto;
+}
+
+#contact a.button {
+    max-width: 300px;
 }
 
 .inline-link {
@@ -457,6 +471,12 @@ textarea:valid {
     font-style: italic;
     background-color: var(--button-color);
     display: inline;
+}
+
+p>a:not(.inline-link):not(.button) {
+    color: var(--primary-color-darker);
+    text-decoration: underline;
+    padding: 0;
 }
 
 #alert-button {
@@ -532,6 +552,10 @@ iframe {
 
 #rental-table {
     max-width: minmax(--min-width, 100vw);
+}
+
+#weather {
+    text-align: center;
 }
 
 #weather-data {
