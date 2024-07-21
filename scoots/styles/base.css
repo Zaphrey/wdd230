@@ -86,6 +86,7 @@ nav a:first-child {
     text-align: left;
     width: 100vw;
     min-width: var(--min-width);
+    max-width: 200px;
     margin: 0.5em;
 }
 
