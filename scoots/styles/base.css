@@ -215,8 +215,6 @@ header {
     border-radius: var(--border-radius);
 }
 
-
-
 section.card {
     padding: 1em;
     margin: 1em 0px;
@@ -475,6 +473,7 @@ textarea:valid {
     display: inline;
 }
 
+lip>a:not(.inline-link):not(.button),
 p>a:not(.inline-link):not(.button) {
     color: var(--primary-color-border);
     text-decoration: underline;
