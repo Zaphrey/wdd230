@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+HR:wght@100..400&display=swap');
+
 :root {
     --base-font: "JetBrains Mono", sans-serif;
     --fancy-font: "Playwrite HR";
@@ -85,19 +88,19 @@ nav a:first-child {
 #logo-nav-container {
     text-align: left;
     width: 100vw;
-    min-width: var(--min-width);
     max-width: 200px;
     margin: 0.5em;
 }
 
 #menu-button {
-    border: none;
+    border: var(--border-primary);
     position: absolute;
     top: 0.5em;
     right: 1em;
     height: 4em;
     width: 4em;
     background-color: var(--primary-color-shadow);
+    border-radius: var(--border-radius);
     padding: 0px;
 }
 
@@ -226,6 +229,7 @@ section.card {
     text-align: left;
     padding: 0.5em;
     width: 100vw;
+    max-width: 250px;
     min-width: var(--min-width);
     text-wrap: pretty;
 }
@@ -476,7 +480,7 @@ textarea:valid {
     display: inline;
 }
 
-lip>a:not(.inline-link):not(.button),
+li>a:not(.inline-link):not(.button),
 p>a:not(.inline-link):not(.button) {
     color: var(--primary-color-border);
     text-decoration: underline;
